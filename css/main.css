@@ -1,0 +1,23 @@
+body {
+  width: 100%;
+  height: auto;
+  background: #2c2c2c;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  background: url(../img/top.png) no-repeat;
+  background-size: 100%;
+}
+header article {
+  width: 1440px;
+  height: 125px;
+}
+
+.bg {
+  width: 100%;
+  height: auto;
+  background: url(../img/bg.png) top center no-repeat;
+  background-size: 100%;
+}
