@@ -63,6 +63,7 @@ header {
 header article {
   width: 1440px;
   height: 128px;
+  margin: auto;
 }
 
 .bg {
