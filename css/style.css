@@ -49,12 +49,15 @@ table {
   border-spacing: 0;
 }
 
-body {
+html body {
   width: 100%;
+  min-width: 1200px;
   height: auto;
-  background: #2c2c2c;
+  font-family: 微軟正黑體;
+  position: relative;
+  background: #210039;
 }
-body header {
+html body header {
   width: 100%;
   height: 128px;
   position: fixed;
@@ -63,23 +66,22 @@ body header {
   background: url(../img/top.png) top center no-repeat;
   background-size: cover;
 }
-body header article {
-  width: 1400px;
-  height: auto;
+html body header article {
+  width: 1200px;
+  height: 128px;
   margin: 0 auto;
 }
-body header article .box-1 {
+html body header article .box-1 {
+  width: 830px;
+  height: 32px;
+  margin-top: 5px;
+  float: right;
+}
+html body header article .box-1 .input-box {
   width: 100%;
   height: auto;
 }
-body header article .box-1 .input-box {
-  width: auto;
-  height: 28px;
-  float: right;
-  position: relative;
-  margin-top: 5px;
-}
-body header article .box-1 .input-box input {
+html body header article .box-1 .input-box input {
   width: 215px;
   height: 30px;
   border: none;
@@ -91,14 +93,14 @@ body header article .box-1 .input-box input {
   font-size: 15px;
   margin-left: 7px;
 }
-body header article .box-1 .input-box input::-webkit-input-placeholder {
+html body header article .box-1 .input-box input::-webkit-input-placeholder {
   color: #560064;
 }
-body header article .box-1 .input-box input:nth-child(2) {
+html body header article .box-1 .input-box input:nth-child(2) {
   background: url(../img/按鈕右.png) no-repeat;
   background-size: 100%;
 }
-body header article .box-1 .input-box button {
+html body header article .box-1 .input-box button {
   width: 78px;
   height: 31px;
   border: none;
@@ -112,57 +114,285 @@ body header article .box-1 .input-box button {
   font-weight: 600;
   margin-left: 5px;
 }
-body header article .box-1 .input-box button:hover, body header article .box-1 .input-box button:active, body header article .box-1 .input-box button.active {
+html body header article .box-1 .input-box button:hover, html body header article .box-1 .input-box button:active, html body header article .box-1 .input-box button.active {
   background-position-y: calc(100% - 0px);
   color: #fff;
 }
-body header article .box-1 .input-box .registered {
+html body header article .box-1 .input-box .registered {
   background-position-y: calc(100% - 0px);
   color: #fff;
 }
-body header article .box-1 .input-box .registered:hover, body header article .box-1 .input-box .registered:active, body header article .box-1 .input-box .registered.active {
+html body header article .box-1 .input-box .registered:hover, html body header article .box-1 .input-box .registered:active, html body header article .box-1 .input-box .registered.active {
   background-position-y: calc(100% + 31px);
   color: #560064;
 }
-body header article .box-1 .input-box .forget {
+html body header article .box-1 .input-box .forget {
   color: #fff;
   font-size: 14px;
   margin-left: 5px;
 }
-body header article .box-1 .input-box .chinese {
+html body header article .box-1 .input-box .chinese {
   width: 100%;
   height: auto;
   display: unset;
 }
-body header article .box-1 .input-box .chinese button {
+html body header article .box-1 .input-box .chinese button {
   width: 109px;
   height: 31px;
   background: url(../img/繁體中文.png) no-repeat;
   background-size: 100%;
   padding-right: 16px;
 }
-body header article .box-2 {
-  width: 100%;
+html body header article .box-2 {
+  width: 1200px;
   height: auto;
-  background: #000;
-  margin-top: 50px;
+  margin-top: 38px;
   position: absolute;
 }
-body header article .box-2 .logo {
+html body header article .box-2 .logo {
   width: 226px;
   height: 42px;
   background: url(../img/LOGO.png) no-repeat;
   background-size: contain;
+  margin-top: 28px;
+  float: left;
 }
-
-.bg {
+html body header article .box-2 ul {
+  width: 855px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  float: right;
+  cursor: pointer;
+}
+html body header article .box-2 ul div {
+  width: 93px;
+  height: 84px;
+}
+html body header article .box-2 ul div:hover, html body header article .box-2 ul div:active, html body header article .box-2 ul div.active {
+  background: url(../img/hover.png) no-repeat;
+  background-size: contain;
+  -webkit-animation: jump 0.4s;
+          animation: jump 0.4s;
+}
+@-webkit-keyframes jump {
+  0%, 100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  33% {
+    -webkit-transform: scale(0.9, 1.1);
+            transform: scale(0.9, 1.1);
+  }
+  66% {
+    -webkit-transform: scale(1.1, 0.9);
+            transform: scale(1.1, 0.9);
+  }
+}
+@keyframes jump {
+  0%, 100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  33% {
+    -webkit-transform: scale(0.9, 1.1);
+            transform: scale(0.9, 1.1);
+  }
+  66% {
+    -webkit-transform: scale(1.1, 0.9);
+            transform: scale(1.1, 0.9);
+  }
+}
+html body header article .box-2 ul div li {
+  width: 100%;
+  height: 84px;
+  text-align: center;
+  line-height: 84px;
+  color: #310054;
+}
+html body header article .box-2 ul div li:hover, html body header article .box-2 ul div li:active, html body header article .box-2 ul div li.active {
+  color: #ffdc89;
+}
+html body .header {
+  width: 100%;
+  height: 128px;
+}
+html body main {
+  width: 100%;
+  height: auto;
+}
+html body main article {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+html body main article .banner {
+  width: 100%;
+  height: 480px;
+  position: relative;
+}
+html body main article .banner .swiper-container {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+html body main article .banner .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 489px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+html body main article .banner .swiper-slide.img-1 {
+  background: url(../img/banner.png) no-repeat center;
+  background-size: contain;
+}
+html body main article .banner .swiper-slide.img-2 {
+  background: url(../img/banner.png) no-repeat center;
+  background-size: contain;
+}
+html body main article .banner .swiper-slide.img-3 {
+  background: url(../img/banner.png) no-repeat center;
+  background-size: contain;
+}
+html body main article .banner .swiper-pagination {
+  bottom: 45px;
+}
+html body main article .banner .swiper-pagination .swiper-pagination-bullet {
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  opacity: unset;
+}
+html body main article .banner .swiper-pagination .swiper-pagination-bullet-active {
+  background: #ffffa4;
+}
+html body main article .news {
+  width: 100%;
+  height: 40px;
+}
+html body main article .news .news-icon {
+  width: 45px;
+  height: 39px;
+  background: url(../img/news-icon.png) no-repeat;
+  background-size: contain;
+  float: left;
+  margin-top: -2px;
+}
+html body main article .news marquee {
+  width: 1150px;
+  height: 40px;
+  background: url(../img/news.png) no-repeat;
+  background-size: contain;
+  line-height: 33px;
+  font-size: 14px;
+  color: #210039;
+  float: right;
+  font-weight: 600;
+}
+html body main article .eight-button-bg {
+  width: 100%;
+  height: 760px;
+}
+html body .right-icon {
+  width: auto;
+  height: 286px;
+  position: fixed;
+  right: 0px;
+  top: 315px;
+  z-index: 999;
+}
+html body .right-icon .right-0 {
+  width: 31px;
+  height: 72px;
+  background: url(../img/righ-0.png) no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+html body .right-icon a {
+  cursor: pointer;
+  background-size: contain;
+}
+html body .right-icon a .icon-hover {
+  width: 55px;
+  height: 64px;
+}
+html body .right-icon a .icon-hover:hover, html body .right-icon a .icon-hover:active, html body .right-icon a .icon-hover.active {
+  width: 68px;
+  height: 77px;
+  -webkit-filter: brightness(1.05);
+          filter: brightness(1.05);
+}
+html body .right-icon a .telephone {
+  background: url(../img/telephone.png) no-repeat;
+  margin: -48px 0 0px -30px;
+}
+html body .right-icon a .line {
+  background: url(../img/line.png) no-repeat;
+  margin: -11px 0 0px -59px;
+}
+html body .right-icon a .message {
+  background: url(../img/message.png) no-repeat;
+  margin: -11px 0 0px -30px;
+}
+html body .left-icon {
+  width: 56px;
+  height: 240px;
+  left: 0px;
+  position: fixed;
+  right: 0px;
+  top: 245px;
+  z-index: 999;
+  cursor: pointer;
+}
+html body .left-icon .left-up {
+  width: 49px;
+  height: 56px;
+  background: url(../img/下載icon.png) no-repeat;
+  background-size: contain;
+  float: right;
+}
+html body .left-icon .left-down {
+  width: 56px;
+  height: 179px;
+  background: url(../img/left.png);
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 3;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+html body .left-icon .left-down:hover, html body .left-icon .left-down:active, html body .left-icon .left-down.active {
+  color: #97012a;
+}
+html body .bg {
   width: 100%;
   height: 100%;
   position: absolute;
   background: url(../img/bg.png) top center no-repeat;
-  background-size: cover;
+  background-size: 100%;
   top: 0;
   left: 0;
   z-index: -999;
-  min-width: 1400px;
 }

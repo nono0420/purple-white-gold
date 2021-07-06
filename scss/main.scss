@@ -1,7 +1,10 @@
-body {
+html body {
     width: 100%;
+    min-width: 1200px;
     height: auto;
-    background: #2c2c2c;
+    font-family: 微軟正黑體;
+    position: relative;
+    background: #210039;
 
     header {
         width: 100%;
@@ -13,20 +16,19 @@ body {
         background-size: cover;
 
         article {
-            width: 1400px;
-            height: auto;
+            width: 1200px;
+            height: 128px;
             margin: 0 auto;
 
             .box-1 {
-                width: 100%;
-                height: auto;
+                width: 830px;
+                height: 32px;
+                margin-top: 5px;
+                float:right;
 
                 .input-box {
-                    width: auto;
-                    height: 28px;
-                    float: right;
-                    position: relative;
-                    margin-top: 5px;
+                    width: 100%;
+                    height: auto;
                     
                     input {
                         width: 215px;
@@ -102,10 +104,9 @@ body {
             }
 
             .box-2 {
-                width: 100%;
+                width: 1200px;
                 height: auto;
-                background: #000;
-                margin-top: 50px;
+                margin-top: 38px;
                 position: absolute;
 
                 .logo {
@@ -113,24 +114,253 @@ body {
                     height: 42px;
                     background: url(../img/LOGO.png) no-repeat;
                     background-size: contain;
+                    margin-top: 28px;
+                    float: left;
+                }
+
+                ul {
+                    width: 855px;
+                    height: auto;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: nowrap;
+                    float: right;
+                    cursor: pointer;
+
+                    div {
+                        width: 93px;
+                        height: 84px;
+
+                        &:hover,&:active,&.active {
+
+                            background: url(../img/hover.png) no-repeat;
+                            background-size: contain;
+                            animation: jump 0.4s;
+                        }
+
+                        @keyframes jump {
+                            0%,
+                            100% {
+                              transform: scale(1, 1);
+                            }
+                          
+                            33% {
+                              transform: scale(0.9, 1.1);
+                            }
+                          
+                            66% {
+                              transform: scale(1.1, 0.9);
+                            }
+                          }
+
+                        li {
+                            width: 100%;
+                            height: 84px;
+                            text-align: center;
+                            line-height: 84px;
+                            color: #310054;
+
+                            &:hover,&:active,&.active {
+                                color: #ffdc89;
+                            }
+                        }
+                    }
                 }
             }
         }
     }
-    
-}
+    .header {
+        width: 100%;
+        height: 128px;
+    }
 
+    main {
+        width: 100%;
+        height: auto;
 
+        article {
+            width: 1200px;
+            height: auto;
+            margin: 0 auto;
 
-.bg {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: url(../img/bg.png) top center no-repeat;
-    background-size: cover;
-    top: 0;
-    left: 0;
-    z-index: -999;
-    min-width: 1400px;
-    
+            .banner {
+                width: 100%;
+                height: 480px;
+                position: relative;
+
+                .swiper-container {
+                    width: 100%;
+                    height: 100%;
+                    cursor: pointer;
+                }
+            
+                .swiper-slide {
+                    text-align: center;
+                    font-size: 18px;
+                    background: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 489px;
+                    object-fit: cover;
+
+                    &.img-1 {
+                        background: url(../img/banner.png) no-repeat center;
+                        background-size: contain;
+                    }
+
+                    &.img-2 {
+                        background: url(../img/banner.png) no-repeat center;  
+                        background-size: contain;
+                    }
+
+                    &.img-3 {
+                        background: url(../img/banner.png) no-repeat center;  
+                        background-size: contain;
+                    }
+                }     
+
+                .swiper-pagination {
+                    bottom: 45px;
+
+                    .swiper-pagination-bullet {
+                        width: 25px;
+                        height: 25px;
+                        background: #fff;
+                        opacity: unset;
+                      
+                    }
+                    .swiper-pagination-bullet-active {
+                        background: #ffffa4;
+                    }
+                    
+                } 
+            }
+
+            .news {
+                width: 100%;
+                height: 40px;
+
+                .news-icon {
+                    width: 45px;
+                    height: 39px;
+                    background: url(../img/news-icon.png) no-repeat;
+                    background-size: contain;
+                    float: left;
+                    margin-top: -2px;
+                }
+                marquee {
+                    width: 1150px;
+                    height: 40px;
+                    background: url(../img/news.png) no-repeat;
+                    background-size: contain;
+                    line-height: 33px;
+                    font-size: 14px;
+                    color: #210039;
+                    float: right;
+                    font-weight: 600;
+                }
+            }
+            
+            .eight-button-bg {
+                width: 100%;
+                height: 760px;
+            }
+        }
+    }
+
+    .right-icon {
+        width: auto;
+        height: 286px;
+        position: fixed;
+        right: 0px;
+        top: 315px;
+        z-index: 999;
+
+        .right-0 {
+            width: 31px;
+            height: 72px;
+            background: url(../img/righ-0.png) no-repeat;
+            background-size: contain;
+            position:absolute;
+        }
+
+        a {
+            cursor: pointer;
+            background-size: contain;
+
+            .icon-hover {
+                width: 55px;
+                height: 64px;
+
+                &:hover,&:active,&.active {
+                    width: 68px;
+                    height: 77px;
+                    filter: brightness(1.05);
+                }
+            }
+
+            .telephone {
+                background: url(../img/telephone.png) no-repeat;
+                margin: -48px 0 0px -30px;
+            }
+            .line {
+
+                background: url(../img/line.png) no-repeat;
+                margin: -11px 0 0px -59px;
+            }
+            .message {
+                background: url(../img/message.png) no-repeat;
+                margin: -11px 0 0px -30px;
+            }
+        }
+    }
+
+    .left-icon {
+        width: 56px;
+        height: 240px;
+        left: 0px;
+        position: fixed;
+        right: 0px;
+        top: 245px;
+        z-index: 999;
+        cursor: pointer;
+
+        .left-up {
+            width: 49px;
+            height: 56px;
+            background: url(../img/下載icon.png) no-repeat;
+            background-size: contain;
+            float: right;
+        }
+        
+
+        .left-down {
+            width: 56px;
+            height: 179px;
+            background: url(../img/left.png);
+            writing-mode: vertical-rl;
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+            line-height: 3;
+            transition: 0.5s;
+
+            &:hover,&:active,&.active {
+                color: #97012a;
+            }
+        }
+        
+    }
+    .bg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: url(../img/bg.png) top center no-repeat;
+        background-size: 100%;
+        top: 0;
+        left: 0;
+        z-index: -999;
+    }
 }

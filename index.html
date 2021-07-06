@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+    <!-- 頭 -->
    <header>
     <article>
+        <!-- 帳密 -->
         <div class="box-1">
             <div class="input-box">
                 <input style="color:#560064" type="text"placeholder="帳號">
@@ -23,11 +26,106 @@
                 </div>
             </div>
         </div>
+        <!-- logo與按鈕 -->
         <div class="box-2">
             <div class="logo"></div>
+            <ul>
+                <div>
+                    <li a href="#">首頁</a></li>
+                </div>
+                <div>
+                    <li a href="#">體育賽事</a></li>
+                </div>
+                <div>
+                    <li a href="#">真人娛樂</a></li>
+                </div>
+                <div>
+                    <li a href="#">老虎機</a></li>
+                </div>
+                <div>
+                    <li a href="#">彩票</a></li>
+                </div>
+                <div>
+                    <li a href="#">捕魚機</a></li>
+                </div>
+                <div>
+                    <li a href="#">棋牌遊戲</a></li>
+                </div>
+                <div>
+                    <li a href="#">優惠</a></li>
+                </div>
+                <div>
+                    <li a href="#">VIP會員</a></li>
+                </div>
+            </ul>
         </div>
     </article>
    </header>
+   <!-- 假header -->
+   <div class="header"></div>
+   <!-- 主體 -->
+   <main>
+       <article>
+            <div class="banner">
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide img-1"></div>
+                        <div class="swiper-slide img-2"></div>
+                        <div class="swiper-slide img-3"></div>
+                    </div>
+                <div class="swiper-pagination"></div>   
+                </div>     
+            </div>
+            <!-- 公告 -->
+            <div class="news">
+                <div class="news-icon"></div>
+                <marquee>公告公告公告公告公告公告公告公告公告公告公告公告公告公告，公告公告公告</marquee>
+            </div>
+            <div class="eight-button-bg"></div>
+       </article>
+   </main>
+   <!-- 右邊-聯絡資訊 -->
+   <div class="right-icon">
+       <div class="right-0"></div>
+
+        <a href="#" >
+            <div class=" icon-hover telephone"></div>
+        </a>
+        <a href="#" >
+            <div class=" icon-hover line"></div>
+        </a>
+        <a href="#" >
+            <div class=" icon-hover message"></div>
+        </a>
+   </div>
+   <!-- 左邊-手機版下載 -->
+   <div class="left-icon">
+       <div class="left-up"></div>
+       <div class="left-down">手機下載</div>
+   </div>
+   <!-- 背景 -->
     <div class="bg"></div>
+
+    <!-- Swiper JS -->
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+ <!-- Initialize Swiper -->
+ <script>
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
 </body>
 </html>
