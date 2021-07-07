@@ -118,30 +118,21 @@ html body header article .box-1 .input-box button:hover, html body header articl
   background-position-y: calc(100% - 0px);
   color: #fff;
 }
-html body header article .box-1 .input-box .registered {
-  background-position-y: calc(100% - 0px);
-  color: #fff;
-}
-html body header article .box-1 .input-box .registered:hover, html body header article .box-1 .input-box .registered:active, html body header article .box-1 .input-box .registered.active {
-  background-position-y: calc(100% + 31px);
-  color: #560064;
-}
 html body header article .box-1 .input-box .forget {
   color: #fff;
   font-size: 14px;
   margin-left: 5px;
 }
-html body header article .box-1 .input-box .chinese {
-  width: 100%;
-  height: auto;
-  display: unset;
-}
-html body header article .box-1 .input-box .chinese button {
-  width: 109px;
+html body header article .box-1 .input-box select {
+  width: 100px;
   height: 31px;
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 16px;
   background: url(../img/繁體中文.png) no-repeat;
   background-size: 100%;
-  padding-right: 16px;
+  border: none;
+  outline: none;
 }
 html body header article .box-2 {
   width: 1200px;
@@ -169,11 +160,12 @@ html body header article .box-2 ul {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   float: right;
-  cursor: pointer;
+  overflow: hidden;
 }
 html body header article .box-2 ul div {
   width: 93px;
-  height: 84px;
+  height: 83px;
+  cursor: pointer;
 }
 html body header article .box-2 ul div:hover, html body header article .box-2 ul div:active, html body header article .box-2 ul div.active {
   background: url(../img/hover.png) no-repeat;
@@ -214,9 +206,12 @@ html body header article .box-2 ul div li {
   height: 84px;
   text-align: center;
   line-height: 84px;
-  color: #310054;
 }
-html body header article .box-2 ul div li:hover, html body header article .box-2 ul div li:active, html body header article .box-2 ul div li.active {
+html body header article .box-2 ul div li a {
+  color: #310054;
+  text-decoration: none;
+}
+html body header article .box-2 ul div li:hover a, html body header article .box-2 ul div li:active a, html body header article .box-2 ul div li.active a {
   color: #ffdc89;
 }
 html body .header {
@@ -309,7 +304,46 @@ html body main article .news marquee {
 }
 html body main article .eight-button-bg {
   width: 100%;
-  height: 760px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+html body main article .eight-button-bg .eight-button-Box {
+  width: 280px;
+  height: 300px;
+}
+html body main article .eight-button-bg .eight-button-Box .BOX {
+  width: 300px;
+  height: 341px;
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d4d4d4), to(#ffffff));
+  background: linear-gradient(to bottom, #d4d4d4 0%, #ffffff 100%);
+  -webkit-clip-path: polygon(78% 29%, 100% 61%, 76% 94%, 25% 94%, 0 61%, 25% 29%);
+          clip-path: polygon(78% 29%, 100% 61%, 76% 94%, 25% 94%, 0 61%, 25% 29%);
+}
+html body main article .eight-button-bg .eight-button-Box p {
+  font-size: 30px;
+  color: #f8dfad;
+  font-weight: 600;
+  text-align: center;
+  padding-left: 15px;
+}
+html body main article .eight-button-bg .eight-button-Box:nth-child(2) {
+  margin-top: 100px;
+}
+html body main article .eight-button-bg .eight-button-Box:nth-child(4) {
+  margin-top: 100px;
+}
+html body main article .eight-button-bg .eight-button-Box:nth-child(6) {
+  margin-top: 100px;
+}
+html body main article .eight-button-bg .eight-button-Box:nth-child(8) {
+  margin-top: 100px;
 }
 html body .top {
   width: 56px;
