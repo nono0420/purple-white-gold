@@ -109,7 +109,7 @@ html body {
 
                 ul {
                     width: 855px;
-                    height: 83px;
+                    height: auto;
                     display: flex;
                     justify-content: space-between;
                     flex-wrap: nowrap;
@@ -125,6 +125,10 @@ html body {
                             background: url(../img/hover.png) no-repeat;
                             background-size: contain;
                             animation: jump 0.4s;
+
+                            a {
+                                color: #ffdc89;
+                            }
                         }
 
                         @keyframes jump {
@@ -136,6 +140,10 @@ html body {
                             33% {
                               transform: scale(0.9, 1.1);
                             }
+
+                            48% {
+                                transform: scale(1.0, 1.0);
+                              }
                           
                             66% {
                               transform: scale(1.1, 0.9);
@@ -147,15 +155,10 @@ html body {
                             height: 84px;
                             text-align: center;
                             line-height: 84px;
-                                a {
+
+                            a {
                                 color: #310054;
                                 text-decoration: none;
-                            }
-
-                            &:hover,&:active,&.active {
-                                a {
-                                    color: #ffdc89;
-                                }
                             }
                         }
                     }

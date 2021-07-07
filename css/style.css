@@ -150,7 +150,7 @@ html body header article .box-2 .logo {
 }
 html body header article .box-2 ul {
   width: 855px;
-  height: 83px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,6 +173,9 @@ html body header article .box-2 ul div:hover, html body header article .box-2 ul
   -webkit-animation: jump 0.4s;
           animation: jump 0.4s;
 }
+html body header article .box-2 ul div:hover a, html body header article .box-2 ul div:active a, html body header article .box-2 ul div.active a {
+  color: #ffdc89;
+}
 @-webkit-keyframes jump {
   0%, 100% {
     -webkit-transform: scale(1, 1);
@@ -181,6 +184,10 @@ html body header article .box-2 ul div:hover, html body header article .box-2 ul
   33% {
     -webkit-transform: scale(0.9, 1.1);
             transform: scale(0.9, 1.1);
+  }
+  48% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
   }
   66% {
     -webkit-transform: scale(1.1, 0.9);
@@ -196,6 +203,10 @@ html body header article .box-2 ul div:hover, html body header article .box-2 ul
     -webkit-transform: scale(0.9, 1.1);
             transform: scale(0.9, 1.1);
   }
+  48% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
   66% {
     -webkit-transform: scale(1.1, 0.9);
             transform: scale(1.1, 0.9);
@@ -210,9 +221,6 @@ html body header article .box-2 ul div li {
 html body header article .box-2 ul div li a {
   color: #310054;
   text-decoration: none;
-}
-html body header article .box-2 ul div li:hover a, html body header article .box-2 ul div li:active a, html body header article .box-2 ul div li.active a {
-  color: #ffdc89;
 }
 html body .header {
   width: 100%;
