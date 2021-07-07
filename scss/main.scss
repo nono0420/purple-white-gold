@@ -118,7 +118,7 @@ html body {
 
                     div {
                         width: 93px;
-                        height: 83px;
+                        height: 84px;
                         cursor: pointer;
 
                         &:hover,&:active,&.active {
@@ -135,6 +135,9 @@ html body {
                             0%,
                             100% {
                               transform: scale(1, 1);
+                            }
+                            10% {
+                                transform: scale(0.8, 0.8);
                             }
                           
                             33% {

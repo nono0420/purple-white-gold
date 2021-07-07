@@ -164,7 +164,7 @@ html body header article .box-2 ul {
 }
 html body header article .box-2 ul div {
   width: 93px;
-  height: 83px;
+  height: 84px;
   cursor: pointer;
 }
 html body header article .box-2 ul div:hover, html body header article .box-2 ul div:active, html body header article .box-2 ul div.active {
@@ -180,6 +180,10 @@ html body header article .box-2 ul div:hover a, html body header article .box-2 
   0%, 100% {
     -webkit-transform: scale(1, 1);
             transform: scale(1, 1);
+  }
+  10% {
+    -webkit-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
   }
   33% {
     -webkit-transform: scale(0.9, 1.1);
@@ -198,6 +202,10 @@ html body header article .box-2 ul div:hover a, html body header article .box-2 
   0%, 100% {
     -webkit-transform: scale(1, 1);
             transform: scale(1, 1);
+  }
+  10% {
+    -webkit-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
   }
   33% {
     -webkit-transform: scale(0.9, 1.1);
