@@ -269,10 +269,40 @@ html body {
             }
         }
     }
+    
+    .top {
+        width: 56px;
+        height: 65px;
+        background: url(../img/goto-top.png) no-repeat;
+        background-size: 100%;
+        position: fixed;
+        right: 35px;
+        bottom: 25px;
+        cursor: pointer;
+        z-index: 999;
+        transition: 0.6s;
+        animation: all 0.9s ease;
+    }
+
+    @keyframes swing {
+        15% {
+            transform: translateY(5px);
+        }
+        30% {
+            transform: translateY(-5px);
+        }
+        50% {
+            transform: translateY(3px);
+        }
+    }
+    .top:hover{
+    animation: swing 1s ease;
+    animation-iteration-count: 1;
+}
 
     .right-icon {
-        width: auto;
-        height: 286px;
+        width: 31px;
+        height: 240px;
         position: fixed;
         right: 0px;
         top: 315px;
@@ -283,21 +313,21 @@ html body {
             height: 72px;
             background: url(../img/righ-0.png) no-repeat;
             background-size: contain;
-            position:absolute;
+            position: absolute;
         }
 
         a {
             cursor: pointer;
             background-size: contain;
 
-            .icon-hover {
+            div {
                 width: 55px;
                 height: 64px;
 
                 &:hover,&:active,&.active {
                     width: 68px;
                     height: 77px;
-                    filter: brightness(1.05);
+                    filter: brightness(1.1);
                 }
             }
 
@@ -327,14 +357,35 @@ html body {
         z-index: 999;
         cursor: pointer;
 
-        .left-up {
+        .left-up{
             width: 49px;
             height: 56px;
             background: url(../img/下載icon.png) no-repeat;
             background-size: contain;
             float: right;
+            position:relative;
+            z-index:999;
+            left:9px;
+            animation:box 0.9s infinite ; 
+
+            &:hover,&:active,&.active {
+            filter: brightness(1.5);
+            }
+
         }
-        
+        @keyframes box{
+        0%{
+            top:20px;
+        }
+
+        50%{
+            top:40px; 
+        }
+
+        100%{
+            top:20px;
+        }
+        }
 
         .left-down {
             width: 56px;
@@ -345,7 +396,7 @@ html body {
             font-weight: 600;
             text-align: center;
             line-height: 3;
-            transition: 0.5s;
+            transition: 0.2s;
 
             &:hover,&:active,&.active {
                 color: #97012a;
