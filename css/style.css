@@ -331,9 +331,13 @@ html body main article .news marquee {
   float: right;
   font-weight: 600;
 }
-html body main article .eight-button-bg {
+html body main article .eight-bg {
   width: 100%;
   height: 800px;
+  background: url(../img/主圖-背景.png) no-repeat;
+  background-size: 100%;
+}
+html body main article .eight-bg .eight-button-bg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,25 +345,22 @@ html body main article .eight-button-bg {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background: url(../img/主圖-背景.png) no-repeat;
-  background-size: 100%;
-  margin: auto;
 }
-html body main article .eight-button-bg .eight-button-Box {
+html body main article .eight-bg .eight-button-bg .eight-button-Box {
   width: 280px;
   height: 300px;
 }
-html body main article .eight-button-bg .eight-button-Box .picture {
+html body main article .eight-bg .eight-button-bg .eight-button-Box .picture {
   width: 100%;
   height: auto;
 }
-html body main article .eight-button-bg .eight-button-Box .picture .imgBOX {
+html body main article .eight-bg .eight-button-bg .eight-button-Box .picture .imgBOX {
   width: 100%;
   height: auto;
   -webkit-clip-path: polygon(80% 22%, 100% 59%, 79% 100%, 23% 100%, 0 59%, 20% 22%);
           clip-path: polygon(80% 22%, 100% 59%, 79% 100%, 23% 100%, 0 59%, 20% 22%);
 }
-html body main article .eight-button-bg .eight-button-Box p {
+html body main article .eight-bg .eight-button-bg .eight-button-Box p {
   font-size: 30px;
   color: #f8dfad;
   font-weight: 600;
