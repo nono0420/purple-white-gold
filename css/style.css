@@ -159,6 +159,8 @@ html body header article .box-2 ul {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   float: right;
+  cursor: pointer;
+  overflow: hidden;
 }
 html body header article .box-2 ul li {
   width: 100%;
@@ -169,7 +171,6 @@ html body header article .box-2 ul li {
 html body header article .box-2 ul li div {
   width: 93px;
   height: 84px;
-  cursor: pointer;
   -webkit-transform: scale(0);
           transform: scale(0);
   position: absolute;
@@ -177,16 +178,13 @@ html body header article .box-2 ul li div {
 html body header article .box-2 ul li a {
   color: #310054;
   text-decoration: none;
-  display: inline-block;
+  position: relative;
 }
-html body header article .box-2 ul li:hover, html body header article .box-2 ul li:active, html body header article .box-2 ul li.active {
+html body header article .box-2 ul li:hover div, html body header article .box-2 ul :active div {
   background: url(../img/hover.png) no-repeat;
   background-size: contain;
   -webkit-animation: jump 0.4s;
           animation: jump 0.4s;
-}
-html body header article .box-2 ul li:hover a, html body header article .box-2 ul li:active a, html body header article .box-2 ul li.active a {
-  color: #ffdc89;
 }
 @-webkit-keyframes jump {
   0%, 100% {
@@ -239,6 +237,9 @@ html body header article .box-2 ul li:hover a, html body header article .box-2 u
     -webkit-transform: scale(1, 1);
             transform: scale(1, 1);
   }
+}
+html body header article .box-2 ul li:hover a, html body header article .box-2 ul :active a {
+  color: #ffdc89;
 }
 html body .header {
   width: 100%;
