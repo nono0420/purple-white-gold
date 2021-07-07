@@ -154,26 +154,38 @@ html body header article .box-2 ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   float: right;
-  overflow: hidden;
 }
-html body header article .box-2 ul div {
+html body header article .box-2 ul li {
+  width: 100%;
+  height: 84px;
+  text-align: center;
+  line-height: 84px;
+}
+html body header article .box-2 ul li div {
   width: 93px;
   height: 84px;
   cursor: pointer;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  position: absolute;
 }
-html body header article .box-2 ul div:hover, html body header article .box-2 ul div:active, html body header article .box-2 ul div.active {
+html body header article .box-2 ul li a {
+  color: #310054;
+  text-decoration: none;
+  display: inline-block;
+}
+html body header article .box-2 ul li:hover, html body header article .box-2 ul li:active, html body header article .box-2 ul li.active {
   background: url(../img/hover.png) no-repeat;
   background-size: contain;
   -webkit-animation: jump 0.4s;
           animation: jump 0.4s;
 }
-html body header article .box-2 ul div:hover a, html body header article .box-2 ul div:active a, html body header article .box-2 ul div.active a {
+html body header article .box-2 ul li:hover a, html body header article .box-2 ul li:active a, html body header article .box-2 ul li.active a {
   color: #ffdc89;
 }
 @-webkit-keyframes jump {
@@ -197,6 +209,10 @@ html body header article .box-2 ul div:hover a, html body header article .box-2 
     -webkit-transform: scale(1.1, 0.9);
             transform: scale(1.1, 0.9);
   }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
 }
 @keyframes jump {
   0%, 100% {
@@ -219,16 +235,10 @@ html body header article .box-2 ul div:hover a, html body header article .box-2 
     -webkit-transform: scale(1.1, 0.9);
             transform: scale(1.1, 0.9);
   }
-}
-html body header article .box-2 ul div li {
-  width: 100%;
-  height: 84px;
-  text-align: center;
-  line-height: 84px;
-}
-html body header article .box-2 ul div li a {
-  color: #310054;
-  text-decoration: none;
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
 }
 html body .header {
   width: 100%;
