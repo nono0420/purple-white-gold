@@ -341,12 +341,12 @@ html body main article .eight-button-bg {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  background: url(../img/主圖-背景.png) no-repeat;
+  background-size: contain;
 }
 html body main article .eight-button-bg .eight-button-Box {
   width: 280px;
   height: 300px;
-  background: url(../img/主圖-背景.png) no-repeat;
-  background-size: 100%;
 }
 html body main article .eight-button-bg .eight-button-Box p {
   font-size: 30px;
