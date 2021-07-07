@@ -275,26 +275,28 @@ html body {
             
             .eight-button-bg {
                 width: 100%;
-                height: auto;
+                height: 800px;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-around;
                 background: url(../img/主圖-背景.png) no-repeat;
-                background-size: contain;
-                
+                background-size: 100%;
+                margin: auto;
+
                 .eight-button-Box {
                     width: 280px;
                     height: 300px;
                    
-                    
-                    // .BOX {
-                    //     width: 300px;
-                    //     height: 341px;
-                    //     position: relative;
-                    //     background: linear-gradient(to bottom, #d4d4d4 0%,#ffffff 100%);
-                    //     clip-path: polygon(78% 29%, 100% 61%, 76% 94%, 25% 94%, 0 61%, 25% 29%);
-                    // }
+                    .picture {
+                        width: 100%;
+                        height: auto;
 
+                        .imgBOX {
+                            width: 100%;
+                            height: auto;
+                            clip-path: polygon(80% 22%, 100% 59%, 79% 100%, 23% 100%, 0 59%, 20% 22%);
+                        }
+                    }
                     p {
                         font-size: 30px;
                         color: #f8dfad;
@@ -302,19 +304,6 @@ html body {
                         text-align: center;
                         padding-left: 15px;
                     }
-                }
-
-                .eight-button-Box:nth-child(2) {
-                    margin-top: 100px;
-                }
-                .eight-button-Box:nth-child(4) {
-                    margin-top: 100px;
-                }
-                .eight-button-Box:nth-child(6) {
-                    margin-top: 100px;
-                }
-                .eight-button-Box:nth-child(8) {
-                    margin-top: 100px;
                 }
             }
         }
