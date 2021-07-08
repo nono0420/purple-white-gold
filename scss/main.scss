@@ -4,7 +4,7 @@ html body {
     height: auto;
     font-family: 微軟正黑體;
     position: relative;
-    // background: #210039;
+    background: #210039;
 
     header {
         width: 100%;
@@ -284,6 +284,7 @@ html body {
                 flex-wrap: wrap;
                 justify-content: space-around;
                 position: relative;
+                margin-bottom: 35px;
 
                 .eight-button-Box {
                     width: 300px;
@@ -295,8 +296,7 @@ html body {
                         height: 232px;
                         position: absolute;
                         display: block;
-                        background: #97012a;
-                        // z-index: 1;
+                        z-index: 1;
                         top: 30px;
                         clip-path: polygon(74% 0, 98% 46%, 74% 92%, 27% 92%, 3% 46%, 27% 0%);
                         transform: translate(-50%);
@@ -393,7 +393,7 @@ html body {
                         top: 106px;
                     }
                     .pe {
-                        background-position-y: calc(100% - 35px);
+                        background-position-y: calc(100% - 23px);
                         background-position-x: calc(100% + 315px);
                     }
                     .fish {
@@ -441,6 +441,96 @@ html body {
         }
     }
     
+    footer {
+        width: 100%;
+        height: auto;
+
+        .footer-top {
+            width: 100%;
+            height: 55px;
+            background: url(../img/footer-top.png) no-repeat;
+            background-size: cover;
+
+            article {
+                width: 1200px;
+                height: 55px;
+                margin: auto;
+
+                ul {
+                    width: 600px;
+                    height: auto;
+                    float: left;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: nowrap;
+                    cursor: pointer;
+
+                    li {
+                        width: 102px;
+                        height: 55px;
+
+                        div {
+                            width: 102px;
+                            height: 55px;
+                            position: absolute;
+                            background: none;
+                            clip-path: polygon(21% 13%, 80% 13%, 100% 50%, 80% 90%, 25% 90%, 0 51%);
+                        }
+    
+                        a {
+                            width: 100px;
+                            font-size: 16px;
+                            font-weight: 600;
+                            color: #310054;
+                            text-align: center;
+                            line-height: 55px;
+                            text-decoration: none;
+                            position: absolute;
+                        }
+                    }
+
+                    li:hover {
+                        
+                        div {
+                            background: linear-gradient(to bottom, #350051 0%,#3f0075 44%,#4a0089 100%);
+                        }
+                        a {
+                            color: #fff;
+                        }
+                    }
+                }
+
+                span {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #310054;
+                    line-height: 55px;
+                    float: right;
+                }
+            }
+        }
+
+        .footer-down {
+            width: 100%;
+            height: 160px;
+            background: url(../img/footer-down.png) no-repeat;
+            background-size: 100%;
+
+            article {
+                width: 1200px;
+                height: auto;
+                margin: auto;
+
+                p {
+                    font-size: 13px;
+                    color: #310054;
+                    font-weight: 600;
+                    padding-top: 33px;
+                    text-align: center;
+                }
+            }
+        }
+    }
     .top {
         width: 56px;
         height: 65px;
