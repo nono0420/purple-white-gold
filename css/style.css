@@ -331,11 +331,9 @@ html body main article .news marquee {
   float: right;
   font-weight: 600;
 }
-html body main article .eight-bg {
+html body main article .eight-button-bg {
   width: 100%;
-  height: 800px;
-}
-html body main article .eight-bg .eight-button-bg {
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -344,21 +342,17 @@ html body main article .eight-bg .eight-button-bg {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-html body main article .eight-bg .eight-button-bg .eight-button-Box {
-  width: 280px;
+html body main article .eight-button-bg .eight-button-Box {
+  width: 300px;
   height: 300px;
 }
-html body main article .eight-bg .eight-button-bg .eight-button-Box .picture {
-  width: 100%;
-  height: auto;
-}
-html body main article .eight-bg .eight-button-bg .eight-button-Box .picture .imgBOX {
-  width: 341px;
+html body main article .eight-button-bg .eight-button-Box .Picture-bg {
+  width: 300px;
   height: 232px;
   background: url(../img/主圖-背景.png) no-repeat;
   background-size: 100%;
 }
-html body main article .eight-bg .eight-button-bg .eight-button-Box p {
+html body main article .eight-button-bg .eight-button-Box p {
   font-size: 30px;
   color: #f8dfad;
   font-weight: 600;
