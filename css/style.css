@@ -51,7 +51,7 @@ table {
 
 html body {
   width: 100%;
-  min-width: 1200px;
+  min-width: 1280px;
   height: auto;
   font-family: 微軟正黑體;
   position: relative;
@@ -356,7 +356,6 @@ html body main article .eight-button-bg .eight-button-Box a {
   position: absolute;
   display: block;
   background: #97012a;
-  z-index: 1;
   top: 30px;
   -webkit-clip-path: polygon(74% 0, 98% 46%, 74% 92%, 27% 92%, 3% 46%, 27% 0%);
           clip-path: polygon(74% 0, 98% 46%, 74% 92%, 27% 92%, 3% 46%, 27% 0%);
@@ -421,6 +420,44 @@ html body main article .eight-button-bg .eight-button-Box .Picture-7 {
 }
 html body main article .eight-button-bg .eight-button-Box .Picture-8 {
   top: 130px;
+}
+html body main article .eight-button-bg .eight-button-Box .picture-img {
+  width: 315px;
+  height: 290px;
+  background: url(../img/8組圖.png) no-repeat;
+  position: absolute;
+}
+html body main article .eight-button-bg .eight-button-Box .girl {
+  top: 15px;
+}
+html body main article .eight-button-bg .eight-button-Box .girl-2 {
+  background-position-x: calc(100% + 635px);
+  top: 94px;
+}
+html body main article .eight-button-bg .eight-button-Box .tiger {
+  background-position-x: calc(100% + 335px);
+  top: 15px;
+}
+html body main article .eight-button-bg .eight-button-Box .tiger-2 {
+  background-position-x: calc(100% + 25px);
+  top: 106px;
+}
+html body main article .eight-button-bg .eight-button-Box .card {
+  background-position-y: calc(100% - 35px);
+}
+html body main article .eight-button-bg .eight-button-Box .ball {
+  background-position-y: calc(100% - 35px);
+  background-position-x: calc(100% + 635px);
+  top: 106px;
+}
+html body main article .eight-button-bg .eight-button-Box .pe {
+  background-position-y: calc(100% - 35px);
+  background-position-x: calc(100% + 315px);
+}
+html body main article .eight-button-bg .eight-button-Box .fish {
+  background-position-y: calc(100% - 35px);
+  background-position-x: calc(100% + 0px);
+  top: 106px;
 }
 html body main article .eight-button-bg .eight-button-Box .eight-text {
   width: 100%;

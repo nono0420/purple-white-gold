@@ -1,6 +1,6 @@
 html body {
     width: 100%;
-    min-width: 1200px;
+    min-width: 1280px;
     height: auto;
     font-family: 微軟正黑體;
     position: relative;
@@ -296,7 +296,7 @@ html body {
                         position: absolute;
                         display: block;
                         background: #97012a;
-                        z-index: 1;
+                        // z-index: 1;
                         top: 30px;
                         clip-path: polygon(74% 0, 98% 46%, 74% 92%, 27% 92%, 3% 46%, 27% 0%);
                         transform: translate(-50%);
@@ -359,6 +359,47 @@ html body {
                     }
                     .Picture-8 {
                         top: 130px;
+                    }
+
+                    .picture-img {
+                        width: 315px;
+                        height: 290px;
+                        background: url(../img/8組圖.png) no-repeat;
+                        position: absolute;
+                    }
+
+                    .girl {
+                        top: 15px;
+                    }
+                    .girl-2 {
+                        background-position-x: calc(100% + 635px);
+                        top: 94px;
+                    }
+
+                    .tiger {
+                        background-position-x: calc(100% + 335px);
+                        top: 15px;
+                    }
+                    .tiger-2 {
+                        background-position-x: calc(100% + 25px);
+                        top: 106px;
+                    }
+                    .card {
+                        background-position-y: calc(100% - 35px);
+                    }
+                    .ball {
+                        background-position-y: calc(100% - 35px);
+                        background-position-x: calc(100% + 635px);
+                        top: 106px;
+                    }
+                    .pe {
+                        background-position-y: calc(100% - 35px);
+                        background-position-x: calc(100% + 315px);
+                    }
+                    .fish {
+                        background-position-y: calc(100% - 35px);
+                        background-position-x: calc(100% + 0px);
+                        top: 106px;
                     }
 
                     .eight-text {
