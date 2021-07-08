@@ -170,6 +170,7 @@ html body header article .box-2 ul li {
   height: 84px;
   text-align: center;
   line-height: 84px;
+  font-weight: 600;
 }
 html body header article .box-2 ul li div {
   width: 93px;
@@ -244,7 +245,7 @@ html body header article .box-2 ul li:hover div {
   }
 }
 html body header article .box-2 ul li:hover a {
-  color: #ffdc89;
+  color: #fff;
 }
 html body .header {
   width: 100%;
