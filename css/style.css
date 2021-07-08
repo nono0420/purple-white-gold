@@ -340,16 +340,46 @@ html body main article .eight-button-bg {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  position: relative;
 }
 html body main article .eight-button-bg .eight-button-Box {
   width: 300px;
   height: 395px;
+  position: relative;
 }
-html body main article .eight-button-bg .eight-button-Box .Picture-bg {
-  width: 300px;
+html body main article .eight-button-bg .eight-button-Box .Picture {
+  width: 341px;
   height: 232px;
   background: url(../img/主圖-背景.png) no-repeat;
   background-size: 100%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html body main article .eight-button-bg .eight-button-Box .Picture-1 {
+  top: 65px;
+}
+html body main article .eight-button-bg .eight-button-Box .Picture-2 {
+  top: 165px;
+}
+html body main article .eight-button-bg .eight-button-Box .Picture-3 {
+  top: 65px;
+}
+html body main article .eight-button-bg .eight-button-Box .Picture-4 {
+  top: 165px;
+}
+html body main article .eight-button-bg .eight-button-Box .Picture-5 {
+  top: 65px;
+}
+html body main article .eight-button-bg .eight-button-Box .Picture-6 {
+  top: 165px;
+}
+html body main article .eight-button-bg .eight-button-Box .Picture-7 {
+  top: 65px;
+}
+html body main article .eight-button-bg .eight-button-Box .Picture-8 {
+  top: 165px;
 }
 html body main article .eight-button-bg .eight-button-Box p {
   font-size: 30px;
@@ -357,6 +387,7 @@ html body main article .eight-button-bg .eight-button-Box p {
   font-weight: 600;
   text-align: center;
   padding-left: 15px;
+  position: absolute;
 }
 html body .top {
   width: 56px;
@@ -518,7 +549,7 @@ html body .bg {
   height: 100%;
   position: absolute;
   background: url(../img/bg.png) top center no-repeat;
-  background-size: 100%;
+  background-size: cover;
   top: 0;
   left: 0;
   z-index: -999;
