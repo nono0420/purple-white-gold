@@ -55,7 +55,6 @@ html body {
   height: auto;
   font-family: 微軟正黑體;
   position: relative;
-  background: #210039;
 }
 html body header {
   width: 100%;
@@ -344,7 +343,7 @@ html body main article .eight-button-bg {
 }
 html body main article .eight-button-bg .eight-button-Box {
   width: 300px;
-  height: 300px;
+  height: 395px;
 }
 html body main article .eight-button-bg .eight-button-Box .Picture-bg {
   width: 300px;
