@@ -53,7 +53,7 @@ html body {
   width: 100%;
   min-width: 1280px;
   height: auto;
-  font-family: 微軟正黑體;
+  font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif !important;
   position: relative;
   background: #210039;
 }
@@ -90,7 +90,7 @@ html body header article .box-1 .input-box input {
   background-size: 100%;
   text-align: center;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 17px;
   margin-left: 7px;
 }
 html body header article .box-1 .input-box input::-webkit-input-placeholder {
@@ -133,6 +133,7 @@ html body header article .box-1 .input-box select {
   background-size: 100%;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 html body header article .box-1 .input-box select option {
   background: #f7d6a5;

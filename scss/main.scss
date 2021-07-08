@@ -2,7 +2,7 @@ html body {
     width: 100%;
     min-width: 1280px;
     height: auto;
-    font-family: 微軟正黑體;
+    font-family: arial,"Microsoft JhengHei","微軟正黑體",sans-serif !important;
     position: relative;
     background: #210039;
 
@@ -40,7 +40,7 @@ html body {
                         background-size: 100%;
                         text-align: center;
                         font-weight: 600;
-                        font-size: 15px;
+                        font-size: 17px;
                         margin-left: 7px;
                     }
         
@@ -88,6 +88,7 @@ html body {
                         background-size: 100%;
                         border: none;
                         outline: none;
+                        cursor: pointer;
                        
                         option {
                             background: #f7d6a5;
