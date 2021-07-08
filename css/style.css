@@ -133,6 +133,9 @@ html body header article .box-1 .input-box select {
   border: none;
   outline: none;
 }
+html body header article .box-1 .input-box select option {
+  background: #f7d6a5;
+}
 html body header article .box-2 {
   width: 1200px;
   height: auto;
@@ -347,6 +350,44 @@ html body main article .eight-button-bg .eight-button-Box {
   height: 395px;
   position: relative;
 }
+html body main article .eight-button-bg .eight-button-Box a {
+  width: 341px;
+  height: 232px;
+  position: absolute;
+  display: block;
+  background: #97012a;
+  z-index: 1;
+  top: 30px;
+  -webkit-clip-path: polygon(74% 0, 98% 46%, 74% 92%, 27% 92%, 3% 46%, 27% 0%);
+          clip-path: polygon(74% 0, 98% 46%, 74% 92%, 27% 92%, 3% 46%, 27% 0%);
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  left: 50%;
+}
+html body main article .eight-button-bg .eight-button-Box .eight-hover-1 {
+  top: 73px;
+}
+html body main article .eight-button-bg .eight-button-Box .eight-hover-2 {
+  top: 173px;
+}
+html body main article .eight-button-bg .eight-button-Box .eight-hover-3 {
+  top: 73px;
+}
+html body main article .eight-button-bg .eight-button-Box .eight-hover-4 {
+  top: 173px;
+}
+html body main article .eight-button-bg .eight-button-Box .eight-hover-5 {
+  top: 38px;
+}
+html body main article .eight-button-bg .eight-button-Box .eight-hover-6 {
+  top: 138px;
+}
+html body main article .eight-button-bg .eight-button-Box .eight-hover-7 {
+  top: 38px;
+}
+html body main article .eight-button-bg .eight-button-Box .eight-hover-8 {
+  top: 138px;
+}
 html body main article .eight-button-bg .eight-button-Box .Picture {
   width: 341px;
   height: 232px;
@@ -370,24 +411,49 @@ html body main article .eight-button-bg .eight-button-Box .Picture-4 {
   top: 165px;
 }
 html body main article .eight-button-bg .eight-button-Box .Picture-5 {
-  top: 65px;
+  top: 30px;
 }
 html body main article .eight-button-bg .eight-button-Box .Picture-6 {
-  top: 165px;
+  top: 130px;
 }
 html body main article .eight-button-bg .eight-button-Box .Picture-7 {
-  top: 65px;
+  top: 30px;
 }
 html body main article .eight-button-bg .eight-button-Box .Picture-8 {
-  top: 165px;
+  top: 130px;
 }
-html body main article .eight-button-bg .eight-button-Box p {
+html body main article .eight-button-bg .eight-button-Box .eight-text {
+  width: 100%;
+  height: auto;
   font-size: 30px;
   color: #f8dfad;
   font-weight: 600;
   text-align: center;
-  padding-left: 15px;
   position: absolute;
+}
+html body main article .eight-button-bg .eight-button-Box .text-1 {
+  top: 300px;
+}
+html body main article .eight-button-bg .eight-button-Box .text-2 {
+  top: 397px;
+}
+html body main article .eight-button-bg .eight-button-Box .text-3 {
+  top: 300px;
+}
+html body main article .eight-button-bg .eight-button-Box .text-4 {
+  top: 397px;
+}
+html body main article .eight-button-bg .eight-button-Box .text-5 {
+  top: 262px;
+}
+html body main article .eight-button-bg .eight-button-Box .text-6 {
+  top: 362px;
+}
+html body main article .eight-button-bg .eight-button-Box .text-7 {
+  top: 262px;
+}
+html body main article .eight-button-bg .eight-button-Box .text-8 {
+  top: 362px;
 }
 html body .top {
   width: 56px;

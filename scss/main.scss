@@ -88,6 +88,10 @@ html body {
                         background-size: 100%;
                         border: none;
                         outline: none;
+                       
+                        option {
+                            background: #f7d6a5;
+                        }
                     }
                 }
             }
@@ -285,6 +289,43 @@ html body {
                     width: 300px;
                     height: 395px;
                     position: relative;
+
+                    a {
+                        width: 341px;
+                        height: 232px;
+                        position: absolute;
+                        display: block;
+                        background: #97012a;
+                        z-index: 1;
+                        top: 30px;
+                        clip-path: polygon(74% 0, 98% 46%, 74% 92%, 27% 92%, 3% 46%, 27% 0%);
+                        transform: translate(-50%);
+                        left: 50%;          
+                    }
+                    .eight-hover-1 {
+                        top: 73px;
+                    }
+                    .eight-hover-2 {
+                        top: 173px;
+                    }
+                    .eight-hover-3 {
+                        top: 73px;
+                    }
+                    .eight-hover-4 {
+                        top: 173px;
+                    }
+                    .eight-hover-5 {
+                        top: 38px;
+                    }
+                    .eight-hover-6 {
+                        top: 138px;
+                    }
+                    .eight-hover-7 {
+                        top: 38px;
+                    }
+                    .eight-hover-8 {
+                        top: 138px;
+                    }
                   
                     .Picture {
                         width: 341px;
@@ -308,25 +349,50 @@ html body {
                         top: 165px;
                     }
                     .Picture-5 {
-                        top: 65px;
+                        top: 30px;
                     }
                     .Picture-6 {
-                        top: 165px;
+                        top: 130px;
                     }
                     .Picture-7 {
-                        top: 65px;
+                        top: 30px;
                     }
                     .Picture-8 {
-                        top: 165px;
+                        top: 130px;
                     }
 
-                    p {
+                    .eight-text {
+                        width: 100%;
+                        height: auto;
                         font-size: 30px;
                         color: #f8dfad;
                         font-weight: 600;
                         text-align: center;
-                        padding-left: 15px;
                         position: absolute;
+                    }
+                    .text-1 {
+                        top: 300px;
+                    }
+                    .text-2 {
+                        top: 397px;
+                    }
+                    .text-3 {
+                        top: 300px;
+                    }
+                    .text-4 {
+                        top: 397px;
+                    }
+                    .text-5 {
+                        top: 262px;
+                    }
+                    .text-6 {
+                        top: 362px;
+                    }
+                    .text-7 {
+                        top: 262px;
+                    }
+                    .text-8 {
+                        top: 362px;
                     }
                 }
             }
