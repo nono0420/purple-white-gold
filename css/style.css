@@ -334,8 +334,6 @@ html body main article .news marquee {
 html body main article .eight-bg {
   width: 100%;
   height: 800px;
-  background: url(../img/主圖-背景.png) no-repeat;
-  background-size: 100%;
 }
 html body main article .eight-bg .eight-button-bg {
   display: -webkit-box;
@@ -355,10 +353,10 @@ html body main article .eight-bg .eight-button-bg .eight-button-Box .picture {
   height: auto;
 }
 html body main article .eight-bg .eight-button-bg .eight-button-Box .picture .imgBOX {
-  width: 100%;
-  height: auto;
-  -webkit-clip-path: polygon(80% 22%, 100% 59%, 79% 100%, 23% 100%, 0 59%, 20% 22%);
-          clip-path: polygon(80% 22%, 100% 59%, 79% 100%, 23% 100%, 0 59%, 20% 22%);
+  width: 341px;
+  height: 232px;
+  background: url(../img/主圖-背景.png) no-repeat;
+  background-size: 100%;
 }
 html body main article .eight-bg .eight-button-bg .eight-button-Box p {
   font-size: 30px;
