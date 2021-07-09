@@ -657,11 +657,11 @@ html body .top:hover {
           animation-iteration-count: 1;
 }
 html body .right-icon {
-  width: 31px;
+  width: 100px;
   height: 240px;
   position: fixed;
   right: 0px;
-  top: 315px;
+  top: 200px;
   z-index: 999;
 }
 html body .right-icon .right-0 {
@@ -670,6 +670,8 @@ html body .right-icon .right-0 {
   background: url(../img/righ-0.png) no-repeat;
   background-size: contain;
   position: absolute;
+  top: 74px;
+  left: 69px;
 }
 html body .right-icon a {
   cursor: pointer;
@@ -678,24 +680,36 @@ html body .right-icon a {
 html body .right-icon a div {
   width: 55px;
   height: 64px;
+  -webkit-animation: all 0.9s ease;
+          animation: all 0.9s ease;
 }
 html body .right-icon a div:hover, html body .right-icon a div:active, html body .right-icon a div.active {
-  width: 68px;
-  height: 77px;
   -webkit-filter: brightness(1.1);
           filter: brightness(1.1);
 }
 html body .right-icon a .telephone {
   background: url(../img/telephone.png) no-repeat;
-  margin: -48px 0 0px -30px;
+  position: absolute;
+  top: 26px;
+  left: 38px;
 }
 html body .right-icon a .line {
   background: url(../img/line.png) no-repeat;
-  margin: -11px 0 0px -59px;
+  position: absolute;
+  top: 81px;
+  left: 8px;
 }
 html body .right-icon a .message {
   background: url(../img/message.png) no-repeat;
-  margin: -11px 0 0px -30px;
+  position: absolute;
+  top: 134px;
+  left: 40px;
+}
+html body .right-icon a div:hover {
+  -webkit-animation: swing 1s ease;
+          animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 html body .left-icon {
   width: 56px;
@@ -706,7 +720,6 @@ html body .left-icon {
   top: 245px;
   z-index: 999;
   cursor: pointer;
-  overflow: hidden;
 }
 html body .left-icon .left-up {
   width: 49px;
@@ -716,7 +729,7 @@ html body .left-icon .left-up {
   float: right;
   position: relative;
   z-index: 999;
-  left: 0px;
+  left: 9px;
   -webkit-animation: box 1s infinite;
           animation: box 1s infinite;
 }
@@ -757,21 +770,6 @@ html body .left-icon .left-down {
   transition: 0.2s all;
   -webkit-transition-timing-function: ease;
           transition-timing-function: ease;
-}
-html body .left-icon .left-down:after {
-  width: 180px;
-  height: 43px;
-  content: "";
-  background: #000;
-  position: absolute;
-  left: -32%;
-  top: 80px;
-  background: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(255, 255, 255, 0)), color-stop(30%, rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.1)));
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.5) 30%, rgba(255, 255, 255, 0.1) 100%);
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
 }
 html body .left-icon:hover .left-up {
   -webkit-filter: brightness(1.5);
