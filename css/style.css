@@ -716,7 +716,7 @@ html body .left-icon .left-up {
   float: right;
   position: relative;
   z-index: 999;
-  left: 9px;
+  left: 0px;
   -webkit-animation: box 1s infinite;
           animation: box 1s infinite;
 }
