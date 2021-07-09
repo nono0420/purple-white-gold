@@ -6,11 +6,20 @@ html body {
     position: relative;
     background: #210039;
 
+    // .sign-in-page {
+    //     width: 100%;
+    //     height: 1000px;
+    //     background: #00000075;
+    //     position: fixed;
+    //     z-index: 101;
+    
+    // }
+
     header {
         width: 100%;
         height: 128px;
         position: fixed;
-        z-index: 999;
+        z-index: 100;
         top: 0px;
         background: url(../img/top.png) top center no-repeat;
         background-size: cover;
@@ -34,6 +43,7 @@ html body {
                     input {
                         width: 215px;
                         height: 30px;
+                        color: #560064;
                         border: none;
                         outline: none;
                         background: url(../img/按鈕左.png) no-repeat;
@@ -78,20 +88,49 @@ html body {
                         font-size: 14px;
                         margin-left: 5px;
                     }
-                    select {
+
+                    
+                    .chinese-select {
                         width: 100px;
                         height: 31px;
-                        font-size: 14px;
-                        font-weight: 600;
-                        padding-left: 16px;
+                        line-height: 31px;
+                        margin-left: 16px;
                         background: url(../img/繁體中文.png) no-repeat;
-                        background-size: 100%;
-                        border: none;
-                        outline: none;
+                        background-size: contain;
                         cursor: pointer;
-                       
-                        option {
-                            background: #f7d6a5;
+                        position: absolute;
+
+                        .select-icon {
+                            width: 100%;
+                            height: 100%;
+                            font-size: 15px;
+                            color: #560064;
+                            padding-left: 70px;
+                            position: absolute;
+
+                        }
+
+                        select {
+                            width: 100%;
+                            height: 100%;
+                            text-align: center;
+                            color: #560064;
+                            font-weight: 600;
+                            padding-left: 17px;
+
+                            background: none;
+                            border: none;
+                            appearance:none;
+                            -moz-appearance:none;
+                            -webkit-appearance:none;
+                            outline: none;
+                            position: absolute;
+                           
+
+                            option {
+                                background: #f7d6a5;
+                                font-weight: 600;
+                            }
                         }
                     }
                 }
@@ -132,7 +171,7 @@ html body {
                         div {
                             width: 93px;
                             height: 84px;
-                            transform:scale(0);
+                            // transform:scale(0);
                             position: absolute;
                         }
 
@@ -140,6 +179,7 @@ html body {
                             color: #310054;
                             text-decoration: none;
                             position: relative;
+                            transition: 0.3s;
                         }
                     }
 
@@ -148,38 +188,50 @@ html body {
                        div {
                             background: url(../img/hover.png) no-repeat;
                             background-size: contain;
-                            animation: jump 0.4s;
-                            animation-iteration-count:infinite;
+                            animation: jump 0.6s;
+                            // animation-iteration-count:infinite;
                         }
 
                         @keyframes jump {
-                            0%,
+                            0% {
+                                transform: rotate(0deg)
+                            }
+                            50% {
+                                transform: rotate(90deg);
+                            }
+                            60% {
+                                transform: rotate(105deg);
+                            }
                             100% {
-                              transform: scale(1, 1);
+                              transform: rotate(360deg);
                             }
-                            10% {
-                                transform: scale(0.8, 0.8);
-                            }
+                            // 10% {
+                            //     transform: scale(0.8, 0.8);
+                            // }
                           
-                            33% {
-                              transform: scale(0.9, 1.1);
-                            }
+                            // 33% {
+                            //   transform: scale(0.9, 1.1);
+                            // }
 
-                            48% {
-                                transform: scale(1.0, 1.0);
-                              }
+                            // 48% {
+                            //     transform: scale(1.0, 1.0);
+                            // }
                           
-                            66% {
-                              transform: scale(1.1, 0.9);
-                            }
-                            100% {
-                                transform: scale(1, 1);
-                            }
+                            // 66% {
+                            //   transform: scale(1.1, 0.9);
+                            // }    
+                                                   
+                            // 100% {
+                            //     transform: scale(1, 1);
+                            // }
                         }
 
                         a {
                             color: #fff;
                         }
+                    }
+                    li:hover {
+                          animation-play-state: paused;
                     }
                 }
             }
@@ -439,13 +491,6 @@ html body {
                         top: 362px;
                     }
                 }
-
-                a:hover {
-                    .Picture {
-                        width: 50px;
-                        height: 50px;
-                    }
-                }
             }
         }
     }
@@ -496,7 +541,7 @@ html body {
                             line-height: 55px;
                             text-decoration: none;
                             position: absolute;
-                            // transition: 0.5s;
+                            transition: 0.5s;
                         }
                     }
 
@@ -678,6 +723,7 @@ html body {
         }
         
     }
+
     .bg {
         width: 100%;
         height: 100%;

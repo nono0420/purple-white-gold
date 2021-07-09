@@ -61,7 +61,7 @@ html body header {
   width: 100%;
   height: 128px;
   position: fixed;
-  z-index: 999;
+  z-index: 100;
   top: 0px;
   background: url(../img/top.png) top center no-repeat;
   background-size: cover;
@@ -84,6 +84,7 @@ html body header article .box-1 .input-box {
 html body header article .box-1 .input-box input {
   width: 215px;
   height: 30px;
+  color: #560064;
   border: none;
   outline: none;
   background: url(../img/按鈕左.png) no-repeat;
@@ -123,20 +124,42 @@ html body header article .box-1 .input-box .forget {
   font-size: 14px;
   margin-left: 5px;
 }
-html body header article .box-1 .input-box select {
+html body header article .box-1 .input-box .chinese-select {
   width: 100px;
   height: 31px;
-  font-size: 14px;
-  font-weight: 600;
-  padding-left: 16px;
+  line-height: 31px;
+  margin-left: 16px;
   background: url(../img/繁體中文.png) no-repeat;
-  background-size: 100%;
-  border: none;
-  outline: none;
+  background-size: contain;
   cursor: pointer;
+  position: absolute;
 }
-html body header article .box-1 .input-box select option {
+html body header article .box-1 .input-box .chinese-select .select-icon {
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  color: #560064;
+  padding-left: 70px;
+  position: absolute;
+}
+html body header article .box-1 .input-box .chinese-select select {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #560064;
+  font-weight: 600;
+  padding-left: 17px;
+  background: none;
+  border: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  position: absolute;
+}
+html body header article .box-1 .input-box .chinese-select select option {
   background: #f7d6a5;
+  font-weight: 600;
 }
 html body header article .box-2 {
   width: 1200px;
@@ -176,77 +199,63 @@ html body header article .box-2 ul li {
 html body header article .box-2 ul li div {
   width: 93px;
   height: 84px;
-  -webkit-transform: scale(0);
-          transform: scale(0);
   position: absolute;
 }
 html body header article .box-2 ul li a {
   color: #310054;
   text-decoration: none;
   position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 html body header article .box-2 ul li:hover div {
   background: url(../img/hover.png) no-repeat;
   background-size: contain;
-  -webkit-animation: jump 0.4s;
-          animation: jump 0.4s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  -webkit-animation: jump 0.6s;
+          animation: jump 0.6s;
 }
 @-webkit-keyframes jump {
-  0%, 100% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
-  10% {
-    -webkit-transform: scale(0.8, 0.8);
-            transform: scale(0.8, 0.8);
+  50% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
-  33% {
-    -webkit-transform: scale(0.9, 1.1);
-            transform: scale(0.9, 1.1);
-  }
-  48% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
-  }
-  66% {
-    -webkit-transform: scale(1.1, 0.9);
-            transform: scale(1.1, 0.9);
+  60% {
+    -webkit-transform: rotate(105deg);
+            transform: rotate(105deg);
   }
   100% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 @keyframes jump {
-  0%, 100% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
-  10% {
-    -webkit-transform: scale(0.8, 0.8);
-            transform: scale(0.8, 0.8);
+  50% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
-  33% {
-    -webkit-transform: scale(0.9, 1.1);
-            transform: scale(0.9, 1.1);
-  }
-  48% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
-  }
-  66% {
-    -webkit-transform: scale(1.1, 0.9);
-            transform: scale(1.1, 0.9);
+  60% {
+    -webkit-transform: rotate(105deg);
+            transform: rotate(105deg);
   }
   100% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 html body header article .box-2 ul li:hover a {
   color: #fff;
+}
+html body header article .box-2 ul li:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 html body .header {
   width: 100%;
@@ -497,10 +506,6 @@ html body main article .eight-button-bg .eight-button-Box .text-7 {
 html body main article .eight-button-bg .eight-button-Box .text-8 {
   top: 362px;
 }
-html body main article .eight-button-bg a:hover .Picture {
-  width: 50px;
-  height: 50px;
-}
 html body footer {
   width: 100%;
   height: auto;
@@ -553,6 +558,8 @@ html body footer .footer-top article ul li a {
   line-height: 55px;
   text-decoration: none;
   position: absolute;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 html body footer .footer-top article ul li:hover div {
   width: 102px;
