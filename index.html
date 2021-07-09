@@ -37,9 +37,9 @@
         <div class="box-2">
             <div class="logo"></div>
             <ul>
-                <li>
+                <li class="active">
                     <div></div>
-                    <a href="#">首頁</a>
+                    <a href="./index.html">首頁</a>
                 </li>
                 
                 <li>
@@ -236,6 +236,13 @@
             prevEl: ".swiper-button-prev",
         },
     });
+
+    $(function(){
+            $('header ul li').click(function(){
+                $(this).addClass('active');
+                $(this).siblings().removeClass('active');
+            })
+        })
 </script>
 </body>
 </html>
