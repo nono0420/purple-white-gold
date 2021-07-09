@@ -131,7 +131,6 @@ html body header article .box-1 .input-box .chinese-select {
   margin-left: 16px;
   background: url(../img/繁體中文.png) no-repeat;
   background-size: contain;
-  cursor: pointer;
   position: absolute;
 }
 html body header article .box-1 .input-box .chinese-select .select-icon {
@@ -149,6 +148,7 @@ html body header article .box-1 .input-box .chinese-select select {
   color: #560064;
   font-weight: 600;
   padding-left: 17px;
+  cursor: pointer;
   background: none;
   border: none;
   appearance: none;
@@ -187,7 +187,6 @@ html body header article .box-2 ul {
       flex-wrap: nowrap;
   float: right;
   cursor: pointer;
-  overflow: hidden;
 }
 html body header article .box-2 ul li {
   width: 100%;
@@ -195,6 +194,8 @@ html body header article .box-2 ul li {
   text-align: center;
   line-height: 84px;
   font-weight: 600;
+  position: relative;
+  overflow: hidden;
 }
 html body header article .box-2 ul li div {
   width: 93px;
@@ -202,52 +203,63 @@ html body header article .box-2 ul li div {
   position: absolute;
 }
 html body header article .box-2 ul li a {
+  width: 100%;
+  height: 100%;
   color: #310054;
   text-decoration: none;
   position: relative;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  display: block;
 }
 html body header article .box-2 ul li:hover div {
   background: url(../img/hover.png) no-repeat;
   background-size: contain;
-  -webkit-animation: jump 0.6s;
-          animation: jump 0.6s;
+  -webkit-animation: jump 0.4s;
+          animation: jump 0.4s;
 }
 @-webkit-keyframes jump {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+  10% {
+    -webkit-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
   }
-  50% {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+  33% {
+    -webkit-transform: scale(0.9, 1.1);
+            transform: scale(0.9, 1.1);
   }
-  60% {
-    -webkit-transform: rotate(105deg);
-            transform: rotate(105deg);
+  48% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  66% {
+    -webkit-transform: scale(1.1, 0.9);
+            transform: scale(1.1, 0.9);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
   }
 }
 @keyframes jump {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+  10% {
+    -webkit-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
   }
-  50% {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+  33% {
+    -webkit-transform: scale(0.9, 1.1);
+            transform: scale(0.9, 1.1);
   }
-  60% {
-    -webkit-transform: rotate(105deg);
-            transform: rotate(105deg);
+  48% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  66% {
+    -webkit-transform: scale(1.1, 0.9);
+            transform: scale(1.1, 0.9);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
   }
 }
 html body header article .box-2 ul li:hover a {
@@ -694,6 +706,7 @@ html body .left-icon {
   top: 245px;
   z-index: 999;
   cursor: pointer;
+  overflow: hidden;
 }
 html body .left-icon .left-up {
   width: 49px;
@@ -704,33 +717,29 @@ html body .left-icon .left-up {
   position: relative;
   z-index: 999;
   left: 9px;
-  -webkit-animation: box 0.9s infinite;
-          animation: box 0.9s infinite;
-}
-html body .left-icon .left-up:hover, html body .left-icon .left-up:active, html body .left-icon .left-up.active {
-  -webkit-filter: brightness(1.5);
-          filter: brightness(1.5);
+  -webkit-animation: box 1s infinite;
+          animation: box 1s infinite;
 }
 @-webkit-keyframes box {
   0% {
-    top: 20px;
+    top: 15px;
   }
   50% {
-    top: 40px;
+    top: 22px;
   }
   100% {
-    top: 20px;
+    top: 15px;
   }
 }
 @keyframes box {
   0% {
-    top: 20px;
+    top: 15px;
   }
   50% {
-    top: 40px;
+    top: 22px;
   }
   100% {
-    top: 20px;
+    top: 15px;
   }
 }
 html body .left-icon .left-down {
@@ -744,11 +753,35 @@ html body .left-icon .left-down {
   font-weight: 600;
   text-align: center;
   line-height: 3;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
-html body .left-icon .left-down:hover, html body .left-icon .left-down:active, html body .left-icon .left-down.active {
+html body .left-icon .left-down:after {
+  width: 180px;
+  height: 43px;
+  content: "";
+  background: #000;
+  position: absolute;
+  left: -32%;
+  top: 80px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(255, 255, 255, 0)), color-stop(30%, rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.1)));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.5) 30%, rgba(255, 255, 255, 0.1) 100%);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+html body .left-icon:hover .left-up {
+  -webkit-filter: brightness(1.5);
+          filter: brightness(1.5);
+}
+html body .left-icon:hover .left-down {
   color: #97012a;
+}
+html body .left-icon:hover .left-down:after {
+  top: 125px;
 }
 html body .bg {
   width: 100%;
