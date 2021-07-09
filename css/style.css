@@ -65,6 +65,7 @@ html body header {
   top: 0px;
   background: url(../img/top.png) top center no-repeat;
   background-size: cover;
+  font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif !important;
 }
 html body header article {
   width: 1200px;
@@ -174,6 +175,7 @@ html body header article .box-2 .logo {
   background-size: contain;
   margin-top: 28px;
   float: left;
+  margin-left: 15px;
 }
 html body header article .box-2 ul {
   width: 855px;
@@ -558,8 +560,8 @@ html body footer .footer-top article ul li div {
   background: none;
   -webkit-clip-path: polygon(21% 13%, 80% 13%, 100% 50%, 80% 90%, 25% 90%, 0 51%);
           clip-path: polygon(21% 13%, 80% 13%, 100% 50%, 80% 90%, 25% 90%, 0 51%);
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 html body footer .footer-top article ul li a {
   width: 100px;
@@ -570,8 +572,8 @@ html body footer .footer-top article ul li a {
   line-height: 55px;
   text-decoration: none;
   position: absolute;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 html body footer .footer-top article ul li:hover div {
   width: 102px;
