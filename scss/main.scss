@@ -334,7 +334,6 @@ html body {
                         z-index: 1;
                         position: absolute;
                         left: 50%;
-                        transform: translateX(-50%);
                         top: 50%;
                         border-radius: 5px;
                         font-size: 18px;
@@ -342,8 +341,8 @@ html body {
                         color: #000;
                         border: 1px solid #fff;
                         background: linear-gradient(to bottom, #fffbe6 0%,#d2bd8c 40%,#a9986f 100%);
-                        box-shadow: 0px 8px 7px -2px rgb(53 53 62 / 70%),inset  0px 3px 2px -2px rgb(53 53 62 / 50%);
-                        opacity: 0;
+                        box-shadow: 7px 8px 7px -3px rgb(53 53 62 / 95%), inset 0px 3px 2px -2px rgb(53 53 62 / 68%);
+                        // opacity: 0;
                         transition: 0.4s;
                     }
 
@@ -500,11 +499,18 @@ html body {
 
                         button {
                             opacity: 1;
-                            top: 150px;
+                            color: #97012a;
+                            animation: jump2 0.5s; 
+                        }
+                        &:nth-of-type(odd){
+                            top: 209px;
+                        }
+                        &:nth-of-type(even){
+                            top: 30px;
                         }
 
                         .Picture{
-                            animation: jump2 0.4s;
+                            animation: jump2 0.5s;
                             left: -7%;
                             transform:translate(0%);
                         }
