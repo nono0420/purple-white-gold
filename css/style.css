@@ -383,7 +383,7 @@ html body main article .eight-button-bg .eight-button-Box button {
   z-index: 1;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 55%;
   border-radius: 5px;
   font-size: 18px;
   font-weight: 600;
@@ -393,6 +393,7 @@ html body main article .eight-button-bg .eight-button-Box button {
   background: linear-gradient(to bottom, #fffbe6 0%, #d2bd8c 40%, #a9986f 100%);
   -webkit-box-shadow: 7px 8px 7px -3px rgba(53, 53, 62, 0.95), inset 0px 3px 2px -2px rgba(53, 53, 62, 0.68);
           box-shadow: 7px 8px 7px -3px rgba(53, 53, 62, 0.95), inset 0px 3px 2px -2px rgba(53, 53, 62, 0.68);
+  opacity: 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -543,17 +544,19 @@ html body main article .eight-button-bg .eight-button-Box .text-7 {
 html body main article .eight-button-bg .eight-button-Box .text-8 {
   top: 362px;
 }
-html body main article .eight-button-bg .eight-button-Box.display button {
+html body main article .eight-button-bg .eight-button-Box.display:nth-of-type(odd) button {
   opacity: 1;
   color: #97012a;
   -webkit-animation: jump2 0.5s;
           animation: jump2 0.5s;
+  top: 162px;
 }
-html body main article .eight-button-bg .eight-button-Box.display:nth-of-type(odd) {
-  top: 209px;
-}
-html body main article .eight-button-bg .eight-button-Box.display:nth-of-type(even) {
-  top: 30px;
+html body main article .eight-button-bg .eight-button-Box.display:nth-of-type(even) button {
+  opacity: 1;
+  color: #97012a;
+  -webkit-animation: jump2 0.5s;
+          animation: jump2 0.5s;
+  top: 263px;
 }
 html body main article .eight-button-bg .eight-button-Box.display .Picture {
   -webkit-animation: jump2 0.5s;

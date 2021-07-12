@@ -334,7 +334,7 @@ html body {
                         z-index: 1;
                         position: absolute;
                         left: 50%;
-                        top: 50%;
+                        top: 55%;
                         border-radius: 5px;
                         font-size: 18px;
                         font-weight: 600;
@@ -342,7 +342,7 @@ html body {
                         border: 1px solid #fff;
                         background: linear-gradient(to bottom, #fffbe6 0%,#d2bd8c 40%,#a9986f 100%);
                         box-shadow: 7px 8px 7px -3px rgb(53 53 62 / 95%), inset 0px 3px 2px -2px rgb(53 53 62 / 68%);
-                        // opacity: 0;
+                        opacity: 0;
                         transition: 0.4s;
                     }
 
@@ -497,16 +497,21 @@ html body {
 
                     &.display {
 
-                        button {
-                            opacity: 1;
-                            color: #97012a;
-                            animation: jump2 0.5s; 
-                        }
                         &:nth-of-type(odd){
-                            top: 209px;
+                            button {
+                                opacity: 1;
+                                color: #97012a;
+                                animation: jump2 0.5s; 
+                                top: 162px;
+                            }
                         }
                         &:nth-of-type(even){
-                            top: 30px;
+                            button {
+                                opacity: 1;
+                                color: #97012a;
+                                animation: jump2 0.5s; 
+                                top: 263px;
+                            }
                         }
 
                         .Picture{
