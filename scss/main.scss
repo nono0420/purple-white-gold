@@ -328,6 +328,25 @@ html body {
                     height: 395px;
                     position: relative;
 
+                    button {
+                        width: 150px;
+                        height: 50px;
+                        z-index: 1;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        top: 50%;
+                        border-radius: 5px;
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: #000;
+                        border: 1px solid #fff;
+                        background: linear-gradient(to bottom, #fffbe6 0%,#d2bd8c 40%,#a9986f 100%);
+                        box-shadow: 0px 8px 7px -2px rgb(53 53 62 / 70%),inset  0px 3px 2px -2px rgb(53 53 62 / 50%);
+                        opacity: 0;
+                        transition: 0.4s;
+                    }
+
                     a {
                         width: 341px;
                         height: 232px;
@@ -402,7 +421,7 @@ html body {
                     .picture-img {
                         width: 315px;
                         height: 290px;
-                        background: url(../img/8組圖.png) no-repeat;
+                        background: url(../img/8組圖-2.png) no-repeat;
                         position: absolute;
                         transition: 0.4s;
                     }
@@ -478,37 +497,30 @@ html body {
                     }
 
                     &.display {
+
+                        button {
+                            opacity: 1;
+                            top: 150px;
+                        }
+
                         .Picture{
-                            // position: absolute;
                             animation: jump2 0.4s;
                             left: -7%;
                             transform:translate(0%);
                         }
                         @keyframes jump2 {
-                            10% {
-                                transform: scale(1.0, 0.8);
-                            }
-                          
-                            33% {
-                              transform: scale(0.9, 1.0);
+                            0%,
+                            100% {
+                                transform: scale(1, 1);
                             }
 
-                            48% {
-                                transform: scale(1.0, 1.0);
+                            25%,
+                            75% {
+                                transform: scale(0.9, 1.1);
                             }
-                          
-                            66% {
-                              transform: scale(0.9, 0.9);
-                            }    
-                            72% {
-                                transform: scale(0.8, 0.8);
-                              } 
-                            95% {
-                                transform: scale(1, 0.9);
-                            } 
-                                                   
-                            100% {
-                                transform: scale(1.0, 1);
+
+                            50% {
+                                transform: scale(1.1, 0.9);
                             }
                         }
                         
@@ -536,6 +548,7 @@ html body {
                         .fish {
                             top: 91px;
                         }
+
                     }
                 }
             }
