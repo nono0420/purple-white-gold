@@ -236,11 +236,11 @@
             prevEl: ".swiper-button-prev",
         },
     });
-
-    $(function(){
-            $('header ul li').click(function(){
-                $(this).addClass('active');
-                $(this).siblings().removeClass('active');
+</script>
+<script>
+     $(function(){
+            $('.eight-button-Box a').hover(function(){
+                $(this).closest('.eight-button-Box').toggleClass('display');
             })
         })
 </script>
