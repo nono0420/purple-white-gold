@@ -286,7 +286,7 @@ html body main article {
 }
 html body main article .banner {
   width: 100%;
-  height: 480px;
+  height: 450px;
   position: relative;
 }
 html body main article .banner .swiper-container {
@@ -308,7 +308,7 @@ html body main article .banner .swiper-slide {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 489px;
+  height: 450px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -328,8 +328,8 @@ html body main article .banner .swiper-pagination {
   bottom: 45px;
 }
 html body main article .banner .swiper-pagination .swiper-pagination-bullet {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   background: #fff;
   opacity: unset;
 }
@@ -370,11 +370,11 @@ html body main article .eight-button-bg {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 50px;
 }
 html body main article .eight-button-bg .eight-button-Box {
   width: 300px;
-  height: 395px;
+  height: 375px;
   position: relative;
 }
 html body main article .eight-button-bg .eight-button-Box:nth-child(odd) button {
@@ -384,7 +384,7 @@ html body main article .eight-button-bg .eight-button-Box:nth-child(odd) a {
   top: 73px;
 }
 html body main article .eight-button-bg .eight-button-Box:nth-child(odd) .Picture {
-  top: 65px;
+  top: 45px;
 }
 html body main article .eight-button-bg .eight-button-Box:nth-child(odd) .eight-text {
   top: 300px;
@@ -396,7 +396,7 @@ html body main article .eight-button-bg .eight-button-Box:nth-child(even) a {
   top: 173px;
 }
 html body main article .eight-button-bg .eight-button-Box:nth-child(even) .Picture {
-  top: 165px;
+  top: 145px;
 }
 html body main article .eight-button-bg .eight-button-Box:nth-child(even) .eight-text {
   top: 397px;
@@ -408,7 +408,7 @@ html body main article .eight-button-bg .eight-button-Box:nth-last-child(2) a, h
   top: 38px;
 }
 html body main article .eight-button-bg .eight-button-Box:nth-last-child(2) .Picture, html body main article .eight-button-bg .eight-button-Box:nth-last-child(4) .Picture {
-  top: 30px;
+  top: 10px;
 }
 html body main article .eight-button-bg .eight-button-Box:nth-last-child(2) .eight-text, html body main article .eight-button-bg .eight-button-Box:nth-last-child(4) .eight-text {
   top: 262px;
@@ -420,7 +420,7 @@ html body main article .eight-button-bg .eight-button-Box:nth-last-child(3) a, h
   top: 138px;
 }
 html body main article .eight-button-bg .eight-button-Box:nth-last-child(3) .Picture, html body main article .eight-button-bg .eight-button-Box:nth-last-child(1) .Picture {
-  top: 130px;
+  top: 110px;
 }
 html body main article .eight-button-bg .eight-button-Box:nth-last-child(3) .eight-text, html body main article .eight-button-bg .eight-button-Box:nth-last-child(1) .eight-text {
   top: 362px;
@@ -537,38 +537,36 @@ html body main article .eight-button-bg .eight-button-Box .picture-img {
   transition: 0.3s all;
 }
 html body main article .eight-button-bg .eight-button-Box .picture-img.girl {
-  top: 15px;
+  top: -5px;
 }
 html body main article .eight-button-bg .eight-button-Box .picture-img.girl-2 {
   background-position-x: calc(100% + 635px);
-  top: 94px;
+  top: 74px;
 }
 html body main article .eight-button-bg .eight-button-Box .picture-img.tiger {
   background-position-x: calc(100% + 335px);
-  top: 15px;
+  top: -5px;
 }
 html body main article .eight-button-bg .eight-button-Box .picture-img.tiger-2 {
   background-position-x: calc(100% + 25px);
-  top: 106px;
+  top: 86px;
 }
 html body main article .eight-button-bg .eight-button-Box .picture-img.card {
   background-position-y: calc(100% - 35px);
-  top: 1px;
 }
 html body main article .eight-button-bg .eight-button-Box .picture-img.ball {
   background-position-y: calc(100% - 35px);
   background-position-x: calc(100% + 635px);
-  top: 106px;
+  top: 86px;
 }
 html body main article .eight-button-bg .eight-button-Box .picture-img.pe {
   background-position-y: calc(100% - 23px);
   background-position-x: calc(100% + 315px);
-  top: 1px;
 }
 html body main article .eight-button-bg .eight-button-Box .picture-img.fish {
   background-position-y: calc(100% - 35px);
   background-position-x: calc(100% + 0px);
-  top: 106px;
+  top: 86px;
 }
 html body main article .eight-button-bg .eight-button-Box .eight-text {
   width: 100%;
@@ -600,12 +598,13 @@ html body footer .footer-top article ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   cursor: pointer;
+  float: left;
 }
 html body footer .footer-top article ul li {
   width: 102px;
@@ -744,8 +743,6 @@ html body .right-icon a {
 html body .right-icon a div {
   width: 55px;
   height: 64px;
-  -webkit-animation: all 0.9s ease;
-          animation: all 0.9s ease;
 }
 html body .right-icon a div:hover, html body .right-icon a div:active, html body .right-icon a div.active {
   -webkit-filter: brightness(1.1);
@@ -784,6 +781,42 @@ html body .left-icon {
   top: 245px;
   z-index: 999;
   cursor: pointer;
+}
+html body .left-icon.display .left-up {
+  -webkit-filter: brightness(1.5);
+          filter: brightness(1.5);
+}
+html body .left-icon.display .left-down {
+  color: #97012a;
+}
+html body .left-icon.display .left-into {
+  display: block;
+}
+html body .left-icon.display .left-into:nth-child(3) {
+  -webkit-animation: slide 0.5s;
+          animation: slide 0.5s;
+}
+html body .left-icon.display .left-into:nth-child(4) {
+  -webkit-animation: slide 0.8s;
+          animation: slide 0.8s;
+}
+html body .left-icon.display .left-into:nth-child(5) {
+  -webkit-animation: slide 1s;
+          animation: slide 1s;
+}
+@-webkit-keyframes slide {
+  20% {
+    left: 58px;
+  }
+}
+@keyframes slide {
+  20% {
+    left: 58px;
+  }
+}
+html body .left-icon.display .left-into:hover, html body .left-icon.display .left-into:active, html body .left-icon.display .left-into.active {
+  -webkit-animation: swing-2 0.8s ease;
+          animation: swing-2 0.8s ease;
 }
 html body .left-icon .left-up {
   width: 49px;
@@ -830,20 +863,42 @@ html body .left-icon .left-down {
   font-weight: 600;
   text-align: center;
   line-height: 3;
-  -webkit-transition: 0.2s all;
-  transition: 0.2s all;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
 }
-html body .left-icon:hover .left-up {
-  -webkit-filter: brightness(1.5);
-          filter: brightness(1.5);
+html body .left-icon .left-into {
+  display: none;
+  width: 104px;
+  height: 48px;
+  background: url(../img/下載滑入圖.png) no-repeat;
+  background-size: 100%;
+  -webkit-animation: all 0.9s ease;
+          animation: all 0.9s ease;
+  position: absolute;
+  left: 78px;
 }
-html body .left-icon:hover .left-down {
-  color: #97012a;
+html body .left-icon .left-into:nth-child(3) {
+  top: 75px;
 }
-html body .left-icon:hover .left-down:after {
-  top: 125px;
+html body .left-icon .left-into:nth-child(4) {
+  top: 120px;
+}
+html body .left-icon .left-into:nth-child(5) {
+  top: 165px;
+}
+html body .left-icon .left-into h5 {
+  font-size: 20px;
+  font-family: 微軟正黑體;
+  color: #aa0303;
+  font-weight: 600;
+  line-height: 30px;
+  position: absolute;
+  padding-left: 16px;
+}
+html body .left-icon .left-into p {
+  font-size: 13px;
+  font-weight: 600;
+  position: absolute;
+  padding-left: 17px;
+  line-height: 61px;
 }
 html body .bg {
   width: 100%;

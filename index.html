@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
@@ -100,56 +101,56 @@
             </div>
             <!-- 八個主要按鈕 -->
             <div class="eight-button-bg">
-                <div class="eight-button-Box">
+                <div data-aos="zoom-in-down" class="eight-button-Box">
                     <button>進入遊戲</button>
                     <a></a>
                     <div class="Picture"></div>
                     <div class="picture-img girl"></div>
                     <div class="eight-text">AA真人娛樂</div>
                 </div>
-                <div class="eight-button-Box">
+                <div data-aos="zoom-in-down" class="eight-button-Box">
                     <button>進入遊戲</button>
                     <a></a>
                     <div class="Picture"></div>
                     <div class="picture-img girl-2"></div>
                     <div class="eight-text">SS真人娛樂</div> 
                 </div>
-                <div class="eight-button-Box">
+                <div data-aos="zoom-out-up" class="eight-button-Box">
                     <button>進入遊戲</button>
                     <a></a>
                     <div class="Picture"></div>
                     <div class="picture-img tiger"></div>
                     <div class="eight-text">BBB老虎機</div>
                 </div>
-                <div class="eight-button-Box">
+                <div data-aos="zoom-out-up" class="eight-button-Box">
                     <button>進入遊戲</button>
                     <a></a>
                     <div class="Picture"></div>
                     <div class="picture-img tiger-2"></div>
                     <div class="eight-text">CC老虎機</div>
                 </div>
-                <div class="eight-button-Box">
+                <div data-aos="zoom-out-up" class="eight-button-Box">
                     <button>進入遊戲</button>
                     <a></a>
                     <div class="Picture"></div>
                     <div class="picture-img card"></div>
                     <div class="eight-text">ABC棋牌遊戲</div>       
                 </div>
-                <div class="eight-button-Box">
+                <div data-aos="zoom-out-up" class="eight-button-Box">
                     <button>進入遊戲</button>
                     <a></a>
                     <div class="Picture"></div>
                     <div class="picture-img ball"></div>
                     <div class="eight-text">ABC彩票</div>         
                 </div>
-                <div class="eight-button-Box">
+                <div data-aos="zoom-in-down" class="eight-button-Box">
                     <button>進入遊戲</button>
                     <a></a>
                     <div class="Picture"></div>
                     <div class="picture-img pe"></div>
                     <div class="eight-text">ABC體育</div>        
                 </div>
-                <div class="eight-button-Box">
+                <div data-aos="zoom-in-down" class="eight-button-Box">
                     <button>進入遊戲</button>
                     <a></a>
                     <div class="Picture"></div>
@@ -220,9 +221,25 @@
    <div class="left-icon">
        <div class="left-up"></div>
        <div class="left-down">手機下載</div>
+
+        <!-- 左邊-手機板下載滑入 -->
+        <div class="left-into">
+            <h5>DG</h5>
+            <p>手機板</p>
+        </div>
+        <div class="left-into">
+            <h5>OG</h5>
+            <p>手機板</p>
+        </div>
+        <div class="left-into">
+            <h5>WM</h5>
+            <p>手機板</p>
+        </div>
    </div>
    <!-- 背景 -->
     <div class="bg"></div>
+   <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -260,6 +277,25 @@
             $(this).siblings().removeClass('active');
         })
     })
+
+    var handle = null;
+    $(function(){
+        $(".left-icon").mouseover(function(){
+            $(this).addClass('display');
+
+            clearTimeout(handle);
+        })
+        $('.left-icon').mouseleave(function(){
+            handle = setTimeout(function(){
+                $('.left-icon').removeClass('display');
+            },200);
+        })
+    })
+</script>
+<script>
+    $(function(){
+   AOS.init();
+})
 </script>
 </body>
 </html>
