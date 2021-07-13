@@ -546,17 +546,17 @@ html body main article .eight-button-bg .eight-button-Box .text-8 {
 }
 html body main article .eight-button-bg .eight-button-Box.display:nth-of-type(odd) button {
   opacity: 1;
-  color: #97012a;
   -webkit-animation: jump2 0.5s;
           animation: jump2 0.5s;
   top: 162px;
+  color: #000;
 }
 html body main article .eight-button-bg .eight-button-Box.display:nth-of-type(even) button {
   opacity: 1;
-  color: #97012a;
   -webkit-animation: jump2 0.5s;
           animation: jump2 0.5s;
   top: 263px;
+  color: #000;
 }
 html body main article .eight-button-bg .eight-button-Box.display .Picture {
   -webkit-animation: jump2 0.5s;
@@ -592,30 +592,6 @@ html body main article .eight-button-bg .eight-button-Box.display .Picture {
     -webkit-transform: scale(1.1, 0.9);
             transform: scale(1.1, 0.9);
   }
-}
-html body main article .eight-button-bg .eight-button-Box.display .girl {
-  top: 0px;
-}
-html body main article .eight-button-bg .eight-button-Box.display .girl-2 {
-  top: 79px;
-}
-html body main article .eight-button-bg .eight-button-Box.display .tiger {
-  top: 0px;
-}
-html body main article .eight-button-bg .eight-button-Box.display .tiger-2 {
-  top: 91px;
-}
-html body main article .eight-button-bg .eight-button-Box.display .card {
-  top: -15px;
-}
-html body main article .eight-button-bg .eight-button-Box.display .ball {
-  top: 91px;
-}
-html body main article .eight-button-bg .eight-button-Box.display .pe {
-  top: -15px;
-}
-html body main article .eight-button-bg .eight-button-Box.display .fish {
-  top: 91px;
 }
 html body footer {
   width: 100%;
