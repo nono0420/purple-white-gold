@@ -159,6 +159,43 @@ html body {
                         line-height: 84px;  
                         font-weight: 600;
                         position: relative;
+
+                        &:hover,&:active,&.active {
+                            animation-play-state: paused;
+
+                            div {
+                                background: url(../img/hover.png) no-repeat;
+                                background-size: contain;
+                                animation: jump 0.4s;
+                                // animation-iteration-count:infinite;
+                            }
+    
+                            @keyframes jump {
+                                10% {
+                                    transform: scale(0.8, 0.8);
+                                }
+                              
+                                33% {
+                                  transform: scale(0.9, 1.0);
+                                }
+    
+                                48% {
+                                    transform: scale(1.0, 1.0);
+                                }
+                              
+                                66% {
+                                  transform: scale(1.1, 0.9);
+                                }    
+                                                       
+                                100% {
+                                    transform: scale(1, 1);
+                                }
+                            }
+    
+                            a {
+                                color: #fff;
+                            }
+                        }
                       
                         div {
                             width: 93px;
@@ -176,45 +213,6 @@ html body {
                             transition: 0.3s;
                             display: block;
                         }
-                    }
-
-                    li:hover{
-
-                       div {
-                            background: url(../img/hover.png) no-repeat;
-                            background-size: contain;
-                            animation: jump 0.4s;
-                            // animation-iteration-count:infinite;
-                        }
-
-                        @keyframes jump {
-                            10% {
-                                transform: scale(0.8, 0.8);
-                            }
-                          
-                            33% {
-                              transform: scale(0.9, 1.0);
-                            }
-
-                            48% {
-                                transform: scale(1.0, 1.0);
-                            }
-                          
-                            66% {
-                              transform: scale(1.1, 0.9);
-                            }    
-                                                   
-                            100% {
-                                transform: scale(1, 1);
-                            }
-                        }
-
-                        a {
-                            color: #fff;
-                        }
-                    }
-                    li:hover {
-                          animation-play-state: paused;
                     }
                 }
             }
@@ -328,13 +326,150 @@ html body {
                     height: 395px;
                     position: relative;
 
+                    &:nth-child(odd) {
+                        
+                        button {
+                            bottom: 10px;
+                        }
+
+                        a {
+                            top: 73px;
+                        }
+
+                        .Picture {
+                            top: 65px;
+                        }
+                        .eight-text{
+                            top:300px
+                        }
+                    }
+
+                    &:nth-child(even) {
+                        
+                        button {
+                            top: 30px;
+                        }
+
+                        a {
+                            top: 173px;
+                        }
+
+                        .Picture {
+                            top: 165px;
+                        }
+
+                        .eight-text{
+                            top:397px
+                        }
+                    }
+
+                    &:nth-last-child(2),&:nth-last-child(4) {
+                        
+                        button {
+                            bottom: 50px;
+                        }
+
+                        a {
+                            top: 38px;
+                        }
+
+                        .Picture {
+                            top: 30px;
+                        }
+
+                        .eight-text{
+                            top:262px
+                        }
+                    }
+
+                    &:nth-last-child(3),&:nth-last-child(1) {
+
+                        button {
+                            top: 45px;
+                        }
+                        
+                        a {
+                            top: 138px;
+                        }
+
+                        .Picture {
+                            top: 130px;
+                        }
+
+                        .eight-text{
+                            top:362px
+                        }
+                    }
+
+                    &.display {
+
+                        &:nth-of-type(odd){
+
+                            button {
+                                opacity: 1;
+                                bottom: 160px;
+                            }
+                        }
+
+                        &:nth-of-type(even){
+
+                            button {
+                                opacity: 1;
+                                top: 275px;
+                            }
+                        }
+
+                        &:nth-last-child(2),&:nth-last-child(4) {
+
+                            button {
+                                opacity: 1;
+                                bottom: 190px;
+                            }
+                        }
+
+                        &:nth-last-child(3),&:nth-last-child(1) {
+
+                            button {
+                                opacity: 1;
+                                top: 250px;
+                            }
+                        }
+
+                        .Picture{
+                            animation: jump2 0.3s linear 0s;
+                            filter: brightness(0.3);
+                        }
+
+                        .picture-img {
+                            filter: brightness(0.3);
+                        }
+                        
+                        @keyframes jump2 {
+                            0% {
+                                transform: translateX(-50%) scale(1, 1);
+                            }
+
+                            50% {
+                                transform: translateX(-50%) scale(0.8, 1.2);
+                            }
+
+                            100% {
+                                transform: translateX(-50%) scale(1, 1);
+                            }
+                        }
+
+                        .picture-img {
+                            transform: scale(1.1);
+                        }
+                    }
+
                     button {
                         width: 150px;
                         height: 50px;
                         z-index: 1;
                         position: absolute;
                         left: 50%;
-                        top: 55%;
+                        transform: translateX(-50%);
                         border-radius: 5px;
                         font-size: 18px;
                         font-weight: 600;
@@ -358,30 +493,6 @@ html body {
                         left: 50%;     
                         cursor: pointer;
                     }
-                    .eight-hover-1 {
-                        top: 73px;
-                    }
-                    .eight-hover-2 {
-                        top: 173px;
-                    }
-                    .eight-hover-3 {
-                        top: 73px;
-                    }
-                    .eight-hover-4 {
-                        top: 173px;
-                    }
-                    .eight-hover-5 {
-                        top: 38px;
-                    }
-                    .eight-hover-6 {
-                        top: 138px;
-                    }
-                    .eight-hover-7 {
-                        top: 38px;
-                    }
-                    .eight-hover-8 {
-                        top: 138px;
-                    }
                   
                     .Picture {
                         width: 341px;
@@ -391,30 +502,7 @@ html body {
                         position: absolute;
                         left: 50%;
                         transform:translateX(-50%);
-                    }
-                    .Picture-1 {
-                        top: 65px;
-                    }
-                    .Picture-2 {
-                        top: 165px;
-                    }
-                    .Picture-3 {
-                        top: 65px;
-                    }
-                    .Picture-4 {
-                        top: 165px;
-                    }
-                    .Picture-5 {
-                        top: 30px;
-                    }
-                    .Picture-6 {
-                        top: 130px;
-                    }
-                    .Picture-7 {
-                        top: 30px;
-                    }
-                    .Picture-8 {
-                        top: 130px;
+                        // transition: 0.2s all;
                     }
 
                     .picture-img {
@@ -422,43 +510,49 @@ html body {
                         height: 290px;
                         background: url(../img/8組圖-2.png) no-repeat;
                         position: absolute;
-                        transition: 0.4s;
-                    }
+                        transition: 0.3s all;
 
-                    .girl {
-                        top: 15px;
-                    }
-                    .girl-2 {
-                        background-position-x: calc(100% + 635px);
-                        top: 94px;
-                    }
+                        &.girl {
+                            top: 15px;
+                        }
 
-                    .tiger {
-                        background-position-x: calc(100% + 335px);
-                        top: 15px;
-                    }
-                    .tiger-2 {
-                        background-position-x: calc(100% + 25px);
-                        top: 106px;
-                    }
-                    .card {
-                        background-position-y: calc(100% - 35px);
-                        top: 1px;
-                    }
-                    .ball {
-                        background-position-y: calc(100% - 35px);
-                        background-position-x: calc(100% + 635px);
-                        top: 106px;
-                    }
-                    .pe {
-                        background-position-y: calc(100% - 23px);
-                        background-position-x: calc(100% + 315px);
-                        top: 1px;
-                    }
-                    .fish {
-                        background-position-y: calc(100% - 35px);
-                        background-position-x: calc(100% + 0px);
-                        top: 106px;
+                        &.girl-2 {
+                            background-position-x: calc(100% + 635px);
+                            top: 94px;
+                        }
+
+                        &.tiger {
+                            background-position-x: calc(100% + 335px);
+                            top: 15px;
+                        }
+
+                        &.tiger-2 {
+                            background-position-x: calc(100% + 25px);
+                            top: 106px;
+                        }
+
+                        &.card {
+                            background-position-y: calc(100% - 35px);
+                            top: 1px;
+                        }
+
+                        &.ball {
+                            background-position-y: calc(100% - 35px);
+                            background-position-x: calc(100% + 635px);
+                            top: 106px;
+                        }
+
+                        &.pe {
+                            background-position-y: calc(100% - 23px);
+                            background-position-x: calc(100% + 315px);
+                            top: 1px;
+                        }
+
+                        &.fish {
+                            background-position-y: calc(100% - 35px);
+                            background-position-x: calc(100% + 0px);
+                            top: 106px;
+                        }
                     }
 
                     .eight-text {
@@ -469,97 +563,6 @@ html body {
                         font-weight: 600;
                         text-align: center;
                         position: absolute;
-                    }
-                    .text-1 {
-                        top: 300px;
-                    }
-                    .text-2 {
-                        top: 397px;
-                    }
-                    .text-3 {
-                        top: 300px;
-                    }
-                    .text-4 {
-                        top: 397px;
-                    }
-                    .text-5 {
-                        top: 262px;
-                    }
-                    .text-6 {
-                        top: 362px;
-                    }
-                    .text-7 {
-                        top: 262px;
-                    }
-                    .text-8 {
-                        top: 362px;
-                    }
-
-                    &.display {
-
-                        &:nth-of-type(odd){
-                            button {
-                                opacity: 1;
-                                animation: jump2 0.5s; 
-                                top: 162px;
-                                color: #000;
-                            }
-                        }
-                        &:nth-of-type(even){
-                            button {
-                                opacity: 1;
-                                animation: jump2 0.5s; 
-                                top: 263px;
-                                color: #000;
-                            }
-                        }
-
-                        .Picture{
-                            animation: jump2 0.5s;
-                            left: -7%;
-                            transform:translate(0%);
-                        }
-                        @keyframes jump2 {
-                            0%,
-                            100% {
-                                transform: scale(1, 1);
-                            }
-
-                            25%,
-                            75% {
-                                transform: scale(0.9, 1.1);
-                            }
-
-                            50% {
-                                transform: scale(1.1, 0.9);
-                            }
-                        }
-                        
-                        // .girl {
-                        //     top: 0px;
-                        // }
-                        // .girl-2{
-                        //     top: 79px;
-                        // }
-                        // .tiger {
-                        //     top: 0px;
-                        // }
-                        // .tiger-2 {
-                        //     top: 91px;
-                        // }
-                        // .card {
-                        //     top: -15px;
-                        // }
-                        // .ball {
-                        //     top: 91px;
-                        // }
-                        // .pe {
-                        //     top: -15px;
-                        // }
-                        // .fish {
-                        //     top: 91px;
-                        // }
-
                     }
                 }
             }
@@ -584,43 +587,46 @@ html body {
                 ul {
                     width: 600px;
                     height: auto;
-                    float: left;
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: flex-start;
                     flex-wrap: nowrap;
                     cursor: pointer;
 
                     li {
                         width: 102px;
                         height: 55px;
+                        position: relative;
 
                         div {
-                            width: 102px;
-                            height: 0px;
+                            width: 100%;
+                            height: 0%;
                             position: absolute;
-                            background: none;
                             clip-path: polygon(21% 13%, 80% 13%, 100% 50%, 80% 90%, 25% 90%, 0 51%);
                             transition: 0.4s;
+                            left: 0px;
+                            top: 0px;
                         }
     
                         a {
-                            width: 100px;
+                            display: block;
+                            width: 100%;
+                            height: 100%;
                             font-size: 16px;
                             font-weight: 600;
                             color: #310054;
                             text-align: center;
                             line-height: 55px;
                             text-decoration: none;
-                            position: absolute;
                             transition: 0.2s;
+                            position: relative;
+                            z-index: 2;
                         }
                     }
 
                     li:hover {
                         
                         div {
-                            width: 102px;
-                            height: 55px;
+                            height: 100%;
                             background: linear-gradient(to bottom, #350051 0%,#3f0075 44%,#4a0089 100%);
                         }
                         a {
