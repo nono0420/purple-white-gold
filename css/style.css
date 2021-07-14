@@ -122,7 +122,7 @@ html body header article .box-1 .input-box button:hover, html body header articl
   color: #fff;
 }
 html body header article .box-1 .input-box .forget {
-  color: #fff;
+  color: #ccc;
   font-size: 14px;
   margin-left: 5px;
 }
@@ -139,7 +139,7 @@ html body header article .box-1 .input-box .chinese-select .select-icon {
   width: 100%;
   height: 100%;
   font-size: 15px;
-  color: #560064;
+  color: #000;
   padding-left: 70px;
   position: absolute;
 }
@@ -716,8 +716,6 @@ html body .top {
 html body .top:hover {
   -webkit-animation: swing 1s ease;
           animation: swing 1s ease;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
 }
 html body .right-icon {
   width: 100px;
@@ -791,6 +789,8 @@ html body .left-icon.display .left-down {
 }
 html body .left-icon.display .left-into {
   display: block;
+  -webkit-transition: 0.15s all;
+  transition: 0.15s all;
 }
 html body .left-icon.display .left-into:nth-child(3) {
   -webkit-animation: slide 0.5s;
@@ -815,8 +815,8 @@ html body .left-icon.display .left-into:nth-child(5) {
   }
 }
 html body .left-icon.display .left-into:hover, html body .left-icon.display .left-into:active, html body .left-icon.display .left-into.active {
-  -webkit-animation: swing-2 0.8s ease;
-          animation: swing-2 0.8s ease;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 html body .left-icon .left-up {
   width: 49px;
@@ -899,6 +899,10 @@ html body .left-icon .left-into p {
   position: absolute;
   padding-left: 17px;
   line-height: 61px;
+}
+html body .left-icon .left-into:hover, html body .left-icon .left-into:active, html body .left-icon .left-into.active {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
 }
 html body .bg {
   width: 100%;
