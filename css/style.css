@@ -777,46 +777,11 @@ html body .left-icon {
   position: fixed;
   right: 0px;
   top: 245px;
-  z-index: 999;
+  z-index: 99;
   cursor: pointer;
 }
-html body .left-icon.display .left-up {
-  -webkit-filter: brightness(1.5);
-          filter: brightness(1.5);
-}
-html body .left-icon.display .left-down {
+html body .left-icon:hover, html body .left-icon:active, html body .left-icon.active {
   color: #97012a;
-}
-html body .left-icon.display .left-into {
-  display: block;
-  -webkit-transition: 0.15s all;
-  transition: 0.15s all;
-}
-html body .left-icon.display .left-into:nth-child(3) {
-  -webkit-animation: slide 0.5s;
-          animation: slide 0.5s;
-}
-html body .left-icon.display .left-into:nth-child(4) {
-  -webkit-animation: slide 0.8s;
-          animation: slide 0.8s;
-}
-html body .left-icon.display .left-into:nth-child(5) {
-  -webkit-animation: slide 1s;
-          animation: slide 1s;
-}
-@-webkit-keyframes slide {
-  20% {
-    left: 58px;
-  }
-}
-@keyframes slide {
-  20% {
-    left: 58px;
-  }
-}
-html body .left-icon.display .left-into:hover, html body .left-icon.display .left-into:active, html body .left-icon.display .left-into.active {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 html body .left-icon .left-up {
   width: 49px;
@@ -864,27 +829,48 @@ html body .left-icon .left-down {
   text-align: center;
   line-height: 3;
 }
-html body .left-icon .left-into {
-  display: none;
+html body .left-icon ul {
+  width: 104px;
+  height: 240px;
+  left: 0px;
+  position: fixed;
+  right: 0px;
+  top: 245px;
+  z-index: 99;
+  cursor: pointer;
+  background: #000;
+}
+html body .left-icon ul .left-into {
   width: 104px;
   height: 48px;
-  background: url(../img/下載滑入圖.png) no-repeat;
-  background-size: 100%;
   -webkit-animation: all 0.9s ease;
           animation: all 0.9s ease;
   position: absolute;
   left: 78px;
 }
-html body .left-icon .left-into:nth-child(3) {
+html body .left-icon ul .left-into li {
+  width: 104px;
+  height: 48px;
+  background: url(../img/下載滑入圖.png) no-repeat;
+  background-size: 100%;
+  display: block;
+  float: left;
+  position: relative;
+}
+html body .left-icon ul .left-into li:hover, html body .left-icon ul .left-into li:active, html body .left-icon ul .left-into li.active {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+}
+html body .left-icon ul .left-into:nth-child(3) {
   top: 75px;
 }
-html body .left-icon .left-into:nth-child(4) {
+html body .left-icon ul .left-into:nth-child(4) {
   top: 120px;
 }
-html body .left-icon .left-into:nth-child(5) {
+html body .left-icon ul .left-into:nth-child(5) {
   top: 165px;
 }
-html body .left-icon .left-into h5 {
+html body .left-icon ul .left-into h5 {
   font-size: 20px;
   font-family: 微軟正黑體;
   color: #aa0303;
@@ -893,16 +879,18 @@ html body .left-icon .left-into h5 {
   position: absolute;
   padding-left: 16px;
 }
-html body .left-icon .left-into p {
+html body .left-icon ul .left-into p {
   font-size: 13px;
   font-weight: 600;
   position: absolute;
   padding-left: 17px;
   line-height: 61px;
 }
-html body .left-icon .left-into:hover, html body .left-icon .left-into:active, html body .left-icon .left-into.active {
-  -webkit-filter: brightness(1.1);
-          filter: brightness(1.1);
+html body .left-icon ul .left-into a {
+  text-decoration: none;
+  color: #000;
+  font-family: 微軟正黑體;
+  font-size: 14px;
 }
 html body .bg {
   width: 100%;

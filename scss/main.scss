@@ -763,60 +763,47 @@ html body {
         position: fixed;
         right: 0px;
         top: 245px;
-        z-index: 999;
+        z-index: 99;
         cursor: pointer;
 
-        &.display {
-            .left-up {
-                filter: brightness(1.5);
-           }
-           .left-down {
-               color: #97012a;
-           }
-           .left-into {
-               display: block;
-               transition: 0.15s all;
-
-                &:nth-child(3) {
-                    animation:slide 0.5s;
-                }
-                &:nth-child(4) {
-                    animation:slide 0.8s;
-                }
-                &:nth-child(5) {
-                    animation:slide 1s;
-                }
-                
-                @keyframes slide {
-
-                    20%{
-                        left: 58px;
-                    }
-                }
-
-
-                &:hover,&:active,&.active {
-                    transform: scale(1.1);
-                    // animation: swing-2 0.8s ease;
-                    // animation-iteration-count: 1;
-        
-                    // @keyframes swing-2 {
-                    //     15% {
-                    //         transform: translateX(5px);
-                    //     }
-                    //     30% {
-                    //         transform: translateX(-5px);
-                    //     }
-                    //     50% {
-                    //         transform: translateX(3px);
-                    //     }
-                    //     70% {
-                    //         transform: translateX(-3px);
-                    //     }
-                    // }
-                }
-           }
+        &:hover,&:active,&.active {
+            color: #97012a;
         }
+
+        // &.display {
+        //     .left-up {
+        //         filter: brightness(1.5);
+        //    }
+        //    .left-down {
+        //        color: #97012a;
+        //    }
+        //    .left-into {
+        //        display: block;
+        //        transition: 0.15s all;
+
+        //         &:nth-child(3) {
+        //             animation:slide 0.5s;
+        //         }
+        //         &:nth-child(4) {
+        //             animation:slide 0.8s;
+        //         }
+        //         &:nth-child(5) {
+        //             animation:slide 1s;
+        //         }
+                
+        //         @keyframes slide {
+
+        //             20%{
+        //                 left: 58px;
+        //             }
+        //         }
+
+
+        //         &:hover,&:active,&.active {
+        //             transform: scale(1.1);
+        //         }
+        //    }
+        // }
 
         .left-up{
             width: 49px;
@@ -856,51 +843,79 @@ html body {
 
         }
 
-        .left-into {
-            display: none;
+        ul {
             width: 104px;
-            height: 48px;
-            background: url(../img/下載滑入圖.png) no-repeat;
-            background-size: 100%;
-            animation: all 0.9s ease;
-            position: absolute;
-            left: 78px;
+            height: 240px;
+            left: 0px;
+            position: fixed;
+            right: 0px;
+            top: 245px;
+            z-index: 99;
+            cursor: pointer;
+            background: #000;
 
-            &:nth-child(3) {
-                top: 75px;
-            }
-
-            &:nth-child(4) {
-                top: 120px;
-            }
-
-            &:nth-child(5) {
-                top: 165px;
-            }
-
-            h5 {
-                font-size: 20px;
-                font-family: 微軟正黑體;
-                color: #aa0303;
-                font-weight: 600;
-                line-height: 30px;
+            .left-into {
+                // display: none;
+                width: 104px;
+                height: 48px;
+                animation: all 0.9s ease;
                 position: absolute;
-                padding-left: 16px;
-            }
-
-            p {
-                font-size: 13px;
-                font-weight: 600;
-                position: absolute;
-                padding-left: 17px;
-                line-height: 61px;
-            }
-
-            &:hover,&:active,&.active {
-                filter: brightness(1.1);
+                left: 78px;
+    
+                li{
+                    width: 104px;
+                    height: 48px;
+                    background: url(../img/下載滑入圖.png) no-repeat;
+                    background-size: 100%;
+                    display: block;
+                    float: left;
+                    position: relative;
+    
+                    &:hover,&:active,&.active {
+                        filter: brightness(1.1);
+                    }
+                }
+    
+                &:nth-child(3) {
+                    top: 75px;
+                }
+    
+                &:nth-child(4) {
+                    top: 120px;
+                }
+    
+                &:nth-child(5) {
+                    top: 165px;
+                }
+    
+                h5 {
+                    font-size: 20px;
+                    font-family: 微軟正黑體;
+                    color: #aa0303;
+                    font-weight: 600;
+                    line-height: 30px;
+                    position: absolute;
+                    padding-left: 16px;
+                }
+    
+                p {
+                    font-size: 13px;
+                    font-weight: 600;
+                    position: absolute;
+                    padding-left: 17px;
+                    line-height: 61px;
+                }
+    
+                a {
+                    text-decoration: none;
+                    color: #000;
+                    font-family: 微軟正黑體;
+                    font-size: 14px;
+                }
             }
         }
     }
+    
     
     .bg {
         width: 100%;
