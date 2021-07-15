@@ -928,12 +928,13 @@ html body {
         text-decoration: none;
 
         ul {
-            width: 100%;
+            width: 0px;
             height: auto;
             margin: 0;
             padding: 0;
             list-style: none;
             transition: 0.25s;
+            top: 45px;
 
             li {
                 width: 100%;
@@ -943,6 +944,8 @@ html body {
                 .menu-into {
                     width: 64px;
                     height: 222px; 
+                    visibility: hidden;
+                    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
                 }
                
             }
@@ -1004,25 +1007,20 @@ html body {
         ul.drop-down-menu ul {
             min-width: 104px;
             position: absolute;
-            z-index: 99;
         }
     
         ul.drop-down-menu ul { /*隱藏次選單*/
             left: 66px;
+            visibility: hidden;
             opacity: 0;
-            transition: opacity 0.4s;
+            transition-delay: 0s, 0s, 0.6s;
+            
         }
     
         ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
+            visibility: visible;
             opacity: 1;
-            transition: opacity 0.4s;
-            left: 63px;
-        }
-
-        ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
-            opacity: 1;
-            transition: opacity 0.4s;
-            left: 66px;
+            // left: 66px;
         }
         
     }
