@@ -973,12 +973,14 @@ html body {
             font-family: 微軟正黑體;
             font-size: 14px;
             color: #000;
+            transition: 0.5s;
             
             .menu-picture {
                 width: 104px;
                 height: 48px;
                 background: url(../img/下載滑入圖.png) no-repeat;
                 background-size: 100%;
+                transition: 0.2s;
 
                 &:hover,&:active,&.active {
                     transform: scale(1.1);

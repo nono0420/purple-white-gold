@@ -880,12 +880,16 @@ html body .menu a {
   font-family: 微軟正黑體;
   font-size: 14px;
   color: #000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 html body .menu a .menu-picture {
   width: 104px;
   height: 48px;
   background: url(../img/下載滑入圖.png) no-repeat;
   background-size: 100%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 html body .menu a .menu-picture:hover, html body .menu a .menu-picture:active, html body .menu a .menu-picture.active {
   -webkit-transform: scale(1.1);
