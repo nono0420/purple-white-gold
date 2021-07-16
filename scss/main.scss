@@ -917,115 +917,64 @@ html body {
 
     }
 
-    .menu {
-        width: 64px;
-        height: 240px;
-        position: fixed;
-        left: 0px;
-        top: 245px;
-        z-index: 99;
-        cursor: pointer;
-        text-decoration: none;
+.menu {
+    width: 70px;
+    height: 240px;
+    position: fixed;
+    left: 0px;
+    top: 245px;
+    z-index: 99;
+    cursor: pointer;
+    text-decoration: none;
 
-        ul {
-            width: 0px;
-            height: auto;
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            transition: 0.25s;
-            top: 45px;
+     .menu-hover {
+         width: 69px;
+         height: 240px;
+     }
 
-            li {
-                width: 100%;
-                height: auto;
-                top: 15px;
+     .box {
+         width: 108px;
+         height: 180px;
+         left: 70px;
+         top: -167px;
+         position: relative;
+         display: none;
 
-                .menu-into {
-                    width: 64px;
-                    height: 222px; 
-                    visibility: hidden;
-                    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
-                }
-               
-            }
-        }
-
-        .drop-down-menu {
-            width: 64px;
-            height: 240px;
-        }
-
-        ul.drop-down-menu {
-            display: inline-block;
-        }
-    
-        ul.drop-down-menu li {
-            position: relative;
-            white-space: nowrap;
-        }
-    
-        a {
-            width: 100%;
+         .box-1,.box-2,.box-3 {
+            width: 104px;
             height: 48px;
-            color: #fff;
-            display: inline-block;
-            font-family: 微軟正黑體;
-            font-size: 14px;
-            color: #000;
-            transition: 0.5s;
-            
-            .menu-picture {
-                width: 104px;
-                height: 48px;
-                background: url(../img/下載滑入圖.png) no-repeat;
-                background-size: 100%;
-                transition: 0.2s;
-
-                &:hover,&:active,&.active {
-                    transform: scale(1.1);
-                }
-
-                h5 {
-                    font-size: 20px;
-                    font-family: 微軟正黑體;
-                    color: #aa0303;
-                    font-weight: 600;
-                    line-height: 30px;
-                    position: absolute;
-                    padding-left: 16px;
-                }
+            background: url(../img/下載滑入圖.png) no-repeat;
+            background-size: 100%;
+            transition: 0.2s;
+            position: relative;
     
-                p {
-                    font-size: 13px;
-                    font-weight: 600;
-                    position: absolute;
-                    padding-left: 17px;
-                    line-height: 61px;
-                }
-
+            h5 {
+                font-size: 20px;
+                font-family: 微軟正黑體;
+                color: #aa0303;
+                font-weight: 600;
+                line-height: 30px;
+                position: absolute;
+                padding-left: 16px;
             }
-        }
-        ul.drop-down-menu ul {
-            min-width: 104px;
-            position: absolute;
-        }
     
-        ul.drop-down-menu ul { /*隱藏次選單*/
-            left: 66px;
-            visibility: hidden;
-            opacity: 0;
-            transition-delay: 0s, 0s, 0.8s;
-            
-        }
+            p {
+                font-size: 13px;
+                font-weight: 600;
+                position: absolute;
+                padding-left: 17px;
+                line-height: 61px;
+            }
     
-        ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
-            visibility: visible;
-            opacity: 1;
-            // left: 66px;
-        }
-        
-    }
+            &:hover,&:active,&.active {
+                transform: scale(1.1);
+                filter: brightness(1.2);
+            }
+         }
+     }
+
+}
+
     
     .bg {
         width: 100%;

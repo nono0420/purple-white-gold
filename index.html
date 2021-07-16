@@ -254,24 +254,24 @@
             <p>手機板</p>
         </div> -->
    </div>
-   <div class="menu">
+   <!-- <div class="menu">
     <ul class="drop-down-menu">
         <li><div class="menu-into"></div>
             <ul>
                 <li><a href="#">
-                    <div class="menu-picture">
+                    <div class="menu-picture-1">
                         <h5>DG</h5>
                         <p>手機板</p>
                     </div>
                 </a></li>
                 <li><a href="#"> 
-                    <div class="menu-picture">
+                    <div class="menu-picture-2  picture-2">
                         <h5>DG</h5>
                         <p>手機板</p>
                     </div>
                 </a></li>
                 <li><a href="#">
-                    <div class="menu-picture">
+                    <div class="menu-picture-3  picture-3">
                         <h5>DG</h5>
                         <p>手機板</p>
                     </div>
@@ -279,8 +279,26 @@
             </ul>
         </li> 
     </ul>
-   </div>
+   </div> -->
    
+
+   <div class="menu">
+       <div class="menu-hover"></div>
+       <div class="box">
+            <div class="box-1">
+                <h5>DG</h5>
+                <p>手機板</p>
+            </div>
+            <div class="box-2">
+                    <h5>OG</h5>
+                    <p>手機板</p>
+            </div>
+            <div class="box-3">
+                    <h5>OG</h5>
+                    <p>手機板</p>
+            </div>
+       </div>
+   </div>
    <!-- 背景 -->
     <div class="bg"></div>
    <!-- aos -->
@@ -322,6 +340,15 @@
             $(this).siblings().removeClass('active');
         })
     })
+
+    $(document).ready(function(){
+        $(".menu").click(function(event){
+            $(".box").delay(200).slideDown();
+        });
+        $(".menu").mouseleave(function(event){
+            $(".box").delay(200).slideUp();
+        });
+    });
 
     // var handle = null;
     // $(function(){
