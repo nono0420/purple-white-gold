@@ -847,7 +847,7 @@ html body .menu .box {
   width: 108px;
   height: 180px;
   left: 70px;
-  top: -167px;
+  top: -240px;
   position: relative;
   display: none;
 }
@@ -859,6 +859,7 @@ html body .menu .box .box-1, html body .menu .box .box-2, html body .menu .box .
   -webkit-transition: 0.2s;
   transition: 0.2s;
   position: relative;
+  top: 76px;
 }
 html body .menu .box .box-1 h5, html body .menu .box .box-2 h5, html body .menu .box .box-3 h5 {
   font-size: 20px;

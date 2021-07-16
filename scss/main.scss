@@ -756,68 +756,33 @@ html body {
         }
     }
 
-    .left-icon {
-        width: 56px;
-        height: 240px;
-        left: 0px;
-        position: fixed;
-        right: 0px;
-        top: 245px;
-        z-index: 99;
-        cursor: pointer;
+.left-icon {
+    width: 56px;
+    height: 240px;
+    left: 0px;
+    position: fixed;
+    right: 0px;
+    top: 245px;
+    z-index: 99;
+    cursor: pointer;
 
-        &:hover,&:active,&.active {
-            color: #97012a;
-        }
+    &:hover,&:active,&.active {
+        color: #97012a;
+    }
 
-        // &.display {
-        //     .left-up {
-        //         filter: brightness(1.5);
-        //    }
-        //    .left-down {
-        //        color: #97012a;
-        //    }
-        //    .left-into {
-        //        display: block;
-        //        transition: 0.15s all;
+    .left-up{
+        width: 49px;
+        height: 56px;
+        background: url(../img/下載icon.png) no-repeat;
+        background-size: contain;
+        float: right;
+        position:relative;
+        z-index:999;
+        left:9px;
+        animation:box 1s infinite; 
+    }
 
-        //         &:nth-child(3) {
-        //             animation:slide 0.5s;
-        //         }
-        //         &:nth-child(4) {
-        //             animation:slide 0.8s;
-        //         }
-        //         &:nth-child(5) {
-        //             animation:slide 1s;
-        //         }
-                
-        //         @keyframes slide {
-
-        //             20%{
-        //                 left: 58px;
-        //             }
-        //         }
-
-
-        //         &:hover,&:active,&.active {
-        //             transform: scale(1.1);
-        //         }
-        //    }
-        // }
-
-        .left-up{
-            width: 49px;
-            height: 56px;
-            background: url(../img/下載icon.png) no-repeat;
-            background-size: contain;
-            float: right;
-            position:relative;
-            z-index:999;
-            left:9px;
-            animation:box 1s infinite; 
-        }
-
-        @keyframes box{
+    @keyframes box{
         0%{
             top:15px;
         }
@@ -829,93 +794,19 @@ html body {
         100%{
             top:15px;
         }
-        }
-
-        .left-down {
-            width: 56px;
-            height: 179px;
-            background: url(../img/left.png);
-            writing-mode: vertical-rl;
-            font-size: 20px;
-            font-weight: 600;
-            text-align: center;
-            line-height: 3;
-
-        }
-
-        // ul {
-        //     width: 104px;
-        //     height: 240px;
-        //     left: 0px;
-        //     position: fixed;
-        //     right: 0px;
-        //     top: 245px;
-        //     z-index: 99;
-        //     cursor: pointer;
-        //     background: #000;
-
-        //     .left-into {
-        //         // display: none;
-        //         width: 104px;
-        //         height: 48px;
-        //         animation: all 0.9s ease;
-        //         position: absolute;
-        //         left: 78px;
-    
-        //         li{
-        //             width: 104px;
-        //             height: 48px;
-        //             background: url(../img/下載滑入圖.png) no-repeat;
-        //             background-size: 100%;
-        //             display: block;
-        //             float: left;
-        //             position: relative;
-    
-        //             &:hover,&:active,&.active {
-        //                 filter: brightness(1.1);
-        //             }
-        //         }
-    
-        //         &:nth-child(3) {
-        //             top: 75px;
-        //         }
-    
-        //         &:nth-child(4) {
-        //             top: 120px;
-        //         }
-    
-        //         &:nth-child(5) {
-        //             top: 165px;
-        //         }
-    
-        //         h5 {
-        //             font-size: 20px;
-        //             font-family: 微軟正黑體;
-        //             color: #aa0303;
-        //             font-weight: 600;
-        //             line-height: 30px;
-        //             position: absolute;
-        //             padding-left: 16px;
-        //         }
-    
-        //         p {
-        //             font-size: 13px;
-        //             font-weight: 600;
-        //             position: absolute;
-        //             padding-left: 17px;
-        //             line-height: 61px;
-        //         }
-    
-        //         a {
-        //             text-decoration: none;
-        //             color: #000;
-        //             font-family: 微軟正黑體;
-        //             font-size: 14px;
-        //         }
-        //     }
-        // }
-
     }
+
+    .left-down {
+        width: 56px;
+        height: 179px;
+        background: url(../img/left.png);
+        writing-mode: vertical-rl;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        line-height: 3;
+    }
+}
 
 .menu {
     width: 70px;
@@ -936,7 +827,7 @@ html body {
          width: 108px;
          height: 180px;
          left: 70px;
-         top: -167px;
+         top: -240px;
          position: relative;
          display: none;
 
@@ -947,6 +838,7 @@ html body {
             background-size: 100%;
             transition: 0.2s;
             position: relative;
+            top: 76px;
     
             h5 {
                 font-size: 20px;

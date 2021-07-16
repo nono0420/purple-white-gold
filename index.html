@@ -343,12 +343,22 @@
 
     $(document).ready(function(){
         $(".menu").click(function(event){
-            $(".box").delay(200).slideDown();
+            $(".box").delay(100).slideDown();
         });
         $(".menu").mouseleave(function(event){
-            $(".box").delay(200).slideUp();
+            $(".box").delay(300).slideUp();
+            $("left-icon").removeClass("active");
         });
     });
+
+    $(function(){
+        $(".menu").hover(function(){
+            $('.left-icon').addClass("active");
+        })
+        $(".menu").mouseleave(function(){
+            $(".left-icon").removeClass("active");
+        })
+    })
 
     // var handle = null;
     // $(function(){
