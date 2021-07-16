@@ -817,6 +817,7 @@ html body {
     z-index: 99;
     cursor: pointer;
     text-decoration: none;
+    transition: 0.2s;
 
      .menu-hover {
          width: 69px;
@@ -829,16 +830,17 @@ html body {
          left: 70px;
          top: -240px;
          position: relative;
-         display: none;
-
+         pointer-events: none;
+        //  opacity: 0;
+       
          .box-1,.box-2,.box-3 {
             width: 104px;
             height: 48px;
             background: url(../img/下載滑入圖.png) no-repeat;
             background-size: 100%;
-            transition: 0.2s;
             position: relative;
-            top: 76px;
+            transition: 0.4s;
+            opacity: 0;
     
             h5 {
                 font-size: 20px;
@@ -861,6 +863,27 @@ html body {
             &:hover,&:active,&.active {
                 transform: scale(1.1);
                 filter: brightness(1.2);
+            }
+         }
+
+         .box-1 {
+             top: 76px;
+         }
+         .box-2 {
+             top: 16px;
+         }
+         .box-3 {
+             top: -36px;
+         }
+     }
+     &:hover {
+         .box {
+             opacity: 1;
+             pointer-events: visible;
+
+            .box-1,.box-2,.box-3 {
+                top: 80px;
+                opacity: 1;
             }
          }
      }

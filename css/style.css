@@ -838,6 +838,8 @@ html body .menu {
   z-index: 99;
   cursor: pointer;
   text-decoration: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 html body .menu .menu-hover {
   width: 69px;
@@ -849,17 +851,17 @@ html body .menu .box {
   left: 70px;
   top: -240px;
   position: relative;
-  display: none;
+  pointer-events: none;
 }
 html body .menu .box .box-1, html body .menu .box .box-2, html body .menu .box .box-3 {
   width: 104px;
   height: 48px;
   background: url(../img/下載滑入圖.png) no-repeat;
   background-size: 100%;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
   position: relative;
-  top: 76px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0;
 }
 html body .menu .box .box-1 h5, html body .menu .box .box-2 h5, html body .menu .box .box-3 h5 {
   font-size: 20px;
@@ -882,6 +884,23 @@ html body .menu .box .box-1:hover, html body .menu .box .box-1:active, html body
           transform: scale(1.1);
   -webkit-filter: brightness(1.2);
           filter: brightness(1.2);
+}
+html body .menu .box .box-1 {
+  top: 76px;
+}
+html body .menu .box .box-2 {
+  top: 16px;
+}
+html body .menu .box .box-3 {
+  top: -36px;
+}
+html body .menu:hover .box {
+  opacity: 1;
+  pointer-events: visible;
+}
+html body .menu:hover .box .box-1, html body .menu:hover .box .box-2, html body .menu:hover .box .box-3 {
+  top: 80px;
+  opacity: 1;
 }
 html body .bg {
   width: 100%;
